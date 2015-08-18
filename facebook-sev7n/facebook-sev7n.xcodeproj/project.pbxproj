@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		77135A631B592BF700E23BB4 /* SCProfilePictureButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 77135A621B592BF700E23BB4 /* SCProfilePictureButton.m */; };
+		774C33001B66B2F100BDA5BE /* SEVServicoMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 774C32FF1B66B2F100BDA5BE /* SEVServicoMainViewController.m */; };
+		774D62751B6901AA00762FF4 /* SEVServicoNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 774D62741B6901AA00762FF4 /* SEVServicoNavigationController.m */; };
+		774D62781B6917A000762FF4 /* SEVNovoDetalhesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 774D62771B6917A000762FF4 /* SEVNovoDetalhesTableViewController.m */; };
+		776035C41B552ECD009C7C9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 776035C31B552ECD009C7C9F /* main.m */; };
+		776035C71B552ECD009C7C9F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 776035C61B552ECD009C7C9F /* AppDelegate.m */; };
+		776035CA1B552ECD009C7C9F /* facebook_sev7n.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 776035C81B552ECD009C7C9F /* facebook_sev7n.xcdatamodeld */; };
+		776035CD1B552ECD009C7C9F /* SEVNovoMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 776035CC1B552ECD009C7C9F /* SEVNovoMainViewController.m */; };
+		776035D01B552ECD009C7C9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 776035CE1B552ECD009C7C9F /* Main.storyboard */; };
+		776035D21B552ECD009C7C9F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 776035D11B552ECD009C7C9F /* Images.xcassets */; };
+		776035D51B552ECD009C7C9F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 776035D31B552ECD009C7C9F /* LaunchScreen.xib */; };
+		776035E11B552ECD009C7C9F /* facebook_sev7nTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 776035E01B552ECD009C7C9F /* facebook_sev7nTests.m */; };
+		77653D2C1B59F3B0005D6BAC /* SEVLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653D2B1B59F3B0005D6BAC /* SEVLoginViewController.m */; };
+		77653D2F1B59F54A005D6BAC /* SEVLogoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653D2E1B59F54A005D6BAC /* SEVLogoutViewController.m */; };
+		777199351B67D14F00AFBD44 /* SEVMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 777199341B67D14F00AFBD44 /* SEVMainTabBarController.m */; };
+		7773F0821B6AD37700A64113 /* SEVModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7773F0811B6AD37700A64113 /* SEVModel.m */; };
+		7773F0851B6B187700A64113 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 7773F0841B6B187700A64113 /* MBProgressHUD.m */; };
+		777EB9501B6BC4C70027292B /* SEVServicosDisponiveisTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 777EB94F1B6BC4C70027292B /* SEVServicosDisponiveisTableViewCell.m */; };
+		778C0FC51B6A797200A0FE60 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 778C0FC41B6A797200A0FE60 /* Parse.framework */; };
+		778C0FC71B6A798100A0FE60 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 778C0FC61B6A798100A0FE60 /* Bolts.framework */; };
+		778C0FD01B6A79E700A0FE60 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 778C0FC81B6A79E700A0FE60 /* AudioToolbox.framework */; };
+		778C0FD11B6A79E700A0FE60 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 778C0FC91B6A79E700A0FE60 /* CFNetwork.framework */; };
+		778C0FD21B6A79E700A0FE60 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 778C0FCA1B6A79E700A0FE60 /* CoreGraphics.framework */; };
+		778C0FD31B6A79E700A0FE60 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 778C0FCB1B6A79E700A0FE60 /* CoreLocation.framework */; };
+		778C0FD41B6A79E700A0FE60 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 778C0FCC1B6A79E700A0FE60 /* QuartzCore.framework */; };
+		778C0FD51B6A79E700A0FE60 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 778C0FCD1B6A79E700A0FE60 /* Security.framework */; };
+		778C0FD71B6A79E700A0FE60 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 778C0FCF1B6A79E700A0FE60 /* SystemConfiguration.framework */; };
+		778C0FD91B6A79F200A0FE60 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 778C0FD81B6A79F200A0FE60 /* libz.dylib */; };
+		778C0FDB1B6A79FC00A0FE60 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 778C0FDA1B6A79FC00A0FE60 /* libsqlite3.dylib */; };
+		778C0FDD1B6A7B0B00A0FE60 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 778C0FDC1B6A7B0B00A0FE60 /* ParseFacebookUtils.framework */; };
+		778C0FDF1B6A7B6400A0FE60 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 778C0FDE1B6A7B6400A0FE60 /* ParseFacebookUtilsV4.framework */; };
+		77ACB1311B55E53E0032A82E /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77ACB12E1B55E53E0032A82E /* FBSDKCoreKit.framework */; };
+		77ACB1321B55E53E0032A82E /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77ACB12F1B55E53E0032A82E /* FBSDKLoginKit.framework */; };
+		77ACB1331B55E53E0032A82E /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77ACB1301B55E53E0032A82E /* FBSDKShareKit.framework */; };
+		77B9BA691B6A4D8F00DF7517 /* SEVPerfilNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B9BA681B6A4D8F00DF7517 /* SEVPerfilNavigationController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		776035DB1B552ECD009C7C9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 776035B61B552ECD009C7C9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 776035BD1B552ECD009C7C9F;
+			remoteInfo = "facebook-sev7n";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		77135A611B592BF700E23BB4 /* SCProfilePictureButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCProfilePictureButton.h; sourceTree = "<group>"; };
+		77135A621B592BF700E23BB4 /* SCProfilePictureButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCProfilePictureButton.m; sourceTree = "<group>"; };
+		774C32FE1B66B2F100BDA5BE /* SEVServicoMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEVServicoMainViewController.h; sourceTree = "<group>"; };
+		774C32FF1B66B2F100BDA5BE /* SEVServicoMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEVServicoMainViewController.m; sourceTree = "<group>"; };
+		774D62731B6901AA00762FF4 /* SEVServicoNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEVServicoNavigationController.h; sourceTree = "<group>"; };
+		774D62741B6901AA00762FF4 /* SEVServicoNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEVServicoNavigationController.m; sourceTree = "<group>"; };
+		774D62761B6917A000762FF4 /* SEVNovoDetalhesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEVNovoDetalhesTableViewController.h; sourceTree = "<group>"; };
+		774D62771B6917A000762FF4 /* SEVNovoDetalhesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEVNovoDetalhesTableViewController.m; sourceTree = "<group>"; };
+		776035BE1B552ECD009C7C9F /* facebook-sev7n.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "facebook-sev7n.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		776035C21B552ECD009C7C9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		776035C31B552ECD009C7C9F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		776035C51B552ECD009C7C9F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		776035C61B552ECD009C7C9F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		776035C91B552ECD009C7C9F /* facebook_sev7n.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = facebook_sev7n.xcdatamodel; sourceTree = "<group>"; };
+		776035CB1B552ECD009C7C9F /* SEVNovoMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SEVNovoMainViewController.h; sourceTree = "<group>"; };
+		776035CC1B552ECD009C7C9F /* SEVNovoMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SEVNovoMainViewController.m; sourceTree = "<group>"; };
+		776035CF1B552ECD009C7C9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		776035D11B552ECD009C7C9F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		776035D41B552ECD009C7C9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		776035DA1B552ECD009C7C9F /* facebook-sev7nTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "facebook-sev7nTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		776035DF1B552ECD009C7C9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		776035E01B552ECD009C7C9F /* facebook_sev7nTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = facebook_sev7nTests.m; sourceTree = "<group>"; };
+		77653D2A1B59F3B0005D6BAC /* SEVLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEVLoginViewController.h; sourceTree = "<group>"; };
+		77653D2B1B59F3B0005D6BAC /* SEVLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEVLoginViewController.m; sourceTree = "<group>"; };
+		77653D2D1B59F54A005D6BAC /* SEVLogoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEVLogoutViewController.h; sourceTree = "<group>"; };
+		77653D2E1B59F54A005D6BAC /* SEVLogoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEVLogoutViewController.m; sourceTree = "<group>"; };
+		777199331B67D14F00AFBD44 /* SEVMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEVMainTabBarController.h; sourceTree = "<group>"; };
+		777199341B67D14F00AFBD44 /* SEVMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEVMainTabBarController.m; sourceTree = "<group>"; };
+		7773F0801B6AD37700A64113 /* SEVModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SEVModel.h; path = ../SEVModel.h; sourceTree = "<group>"; };
+		7773F0811B6AD37700A64113 /* SEVModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SEVModel.m; path = ../SEVModel.m; sourceTree = "<group>"; };
+		7773F0831B6B187700A64113 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		7773F0841B6B187700A64113 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		777EB94E1B6BC4C70027292B /* SEVServicosDisponiveisTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEVServicosDisponiveisTableViewCell.h; sourceTree = "<group>"; };
+		777EB94F1B6BC4C70027292B /* SEVServicosDisponiveisTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEVServicosDisponiveisTableViewCell.m; sourceTree = "<group>"; };
+		778C0FC41B6A797200A0FE60 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		778C0FC61B6A798100A0FE60 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		778C0FC81B6A79E700A0FE60 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		778C0FC91B6A79E700A0FE60 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		778C0FCA1B6A79E700A0FE60 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		778C0FCB1B6A79E700A0FE60 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		778C0FCC1B6A79E700A0FE60 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		778C0FCD1B6A79E700A0FE60 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		778C0FCF1B6A79E700A0FE60 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		778C0FD81B6A79F200A0FE60 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		778C0FDA1B6A79FC00A0FE60 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		778C0FDC1B6A7B0B00A0FE60 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		778C0FDE1B6A7B6400A0FE60 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		77ACB12E1B55E53E0032A82E /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		77ACB12F1B55E53E0032A82E /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		77ACB1301B55E53E0032A82E /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../FBSDKShareKit.framework; sourceTree = "<group>"; };
+		77B9BA671B6A4D8F00DF7517 /* SEVPerfilNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEVPerfilNavigationController.h; sourceTree = "<group>"; };
+		77B9BA681B6A4D8F00DF7517 /* SEVPerfilNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEVPerfilNavigationController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		776035BB1B552ECD009C7C9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				778C0FDB1B6A79FC00A0FE60 /* libsqlite3.dylib in Frameworks */,
+				778C0FD91B6A79F200A0FE60 /* libz.dylib in Frameworks */,
+				778C0FD01B6A79E700A0FE60 /* AudioToolbox.framework in Frameworks */,
+				778C0FD11B6A79E700A0FE60 /* CFNetwork.framework in Frameworks */,
+				778C0FD21B6A79E700A0FE60 /* CoreGraphics.framework in Frameworks */,
+				778C0FD31B6A79E700A0FE60 /* CoreLocation.framework in Frameworks */,
+				778C0FD41B6A79E700A0FE60 /* QuartzCore.framework in Frameworks */,
+				778C0FD51B6A79E700A0FE60 /* Security.framework in Frameworks */,
+				778C0FD71B6A79E700A0FE60 /* SystemConfiguration.framework in Frameworks */,
+				778C0FC71B6A798100A0FE60 /* Bolts.framework in Frameworks */,
+				77ACB1321B55E53E0032A82E /* FBSDKLoginKit.framework in Frameworks */,
+				77ACB1311B55E53E0032A82E /* FBSDKCoreKit.framework in Frameworks */,
+				778C0FC51B6A797200A0FE60 /* Parse.framework in Frameworks */,
+				778C0FDF1B6A7B6400A0FE60 /* ParseFacebookUtilsV4.framework in Frameworks */,
+				778C0FDD1B6A7B0B00A0FE60 /* ParseFacebookUtils.framework in Frameworks */,
+				77ACB1331B55E53E0032A82E /* FBSDKShareKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		776035D71B552ECD009C7C9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		776035B51B552ECD009C7C9F = {
+			isa = PBXGroup;
+			children = (
+				776035C01B552ECD009C7C9F /* facebook-sev7n */,
+				776035DD1B552ECD009C7C9F /* facebook-sev7nTests */,
+				776035BF1B552ECD009C7C9F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		776035BF1B552ECD009C7C9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				776035BE1B552ECD009C7C9F /* facebook-sev7n.app */,
+				776035DA1B552ECD009C7C9F /* facebook-sev7nTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		776035C01B552ECD009C7C9F /* facebook-sev7n */ = {
+			isa = PBXGroup;
+			children = (
+				7773F0801B6AD37700A64113 /* SEVModel.h */,
+				7773F0811B6AD37700A64113 /* SEVModel.m */,
+				776035C51B552ECD009C7C9F /* AppDelegate.h */,
+				776035C61B552ECD009C7C9F /* AppDelegate.m */,
+				776035CB1B552ECD009C7C9F /* SEVNovoMainViewController.h */,
+				776035CC1B552ECD009C7C9F /* SEVNovoMainViewController.m */,
+				774D62761B6917A000762FF4 /* SEVNovoDetalhesTableViewController.h */,
+				774D62771B6917A000762FF4 /* SEVNovoDetalhesTableViewController.m */,
+				774C32FE1B66B2F100BDA5BE /* SEVServicoMainViewController.h */,
+				774C32FF1B66B2F100BDA5BE /* SEVServicoMainViewController.m */,
+				77653D2A1B59F3B0005D6BAC /* SEVLoginViewController.h */,
+				77653D2B1B59F3B0005D6BAC /* SEVLoginViewController.m */,
+				77135A611B592BF700E23BB4 /* SCProfilePictureButton.h */,
+				77135A621B592BF700E23BB4 /* SCProfilePictureButton.m */,
+				77653D2D1B59F54A005D6BAC /* SEVLogoutViewController.h */,
+				77653D2E1B59F54A005D6BAC /* SEVLogoutViewController.m */,
+				776035CE1B552ECD009C7C9F /* Main.storyboard */,
+				777EB94E1B6BC4C70027292B /* SEVServicosDisponiveisTableViewCell.h */,
+				777EB94F1B6BC4C70027292B /* SEVServicosDisponiveisTableViewCell.m */,
+				77B9BA671B6A4D8F00DF7517 /* SEVPerfilNavigationController.h */,
+				77B9BA681B6A4D8F00DF7517 /* SEVPerfilNavigationController.m */,
+				774D62731B6901AA00762FF4 /* SEVServicoNavigationController.h */,
+				774D62741B6901AA00762FF4 /* SEVServicoNavigationController.m */,
+				777199331B67D14F00AFBD44 /* SEVMainTabBarController.h */,
+				777199341B67D14F00AFBD44 /* SEVMainTabBarController.m */,
+				776035D11B552ECD009C7C9F /* Images.xcassets */,
+				776035D31B552ECD009C7C9F /* LaunchScreen.xib */,
+				776035C81B552ECD009C7C9F /* facebook_sev7n.xcdatamodeld */,
+				776035C11B552ECD009C7C9F /* Supporting Files */,
+			);
+			path = "facebook-sev7n";
+			sourceTree = "<group>";
+		};
+		776035C11B552ECD009C7C9F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7773F0831B6B187700A64113 /* MBProgressHUD.h */,
+				7773F0841B6B187700A64113 /* MBProgressHUD.m */,
+				778C0FDE1B6A7B6400A0FE60 /* ParseFacebookUtilsV4.framework */,
+				778C0FDC1B6A7B0B00A0FE60 /* ParseFacebookUtils.framework */,
+				778C0FDA1B6A79FC00A0FE60 /* libsqlite3.dylib */,
+				778C0FD81B6A79F200A0FE60 /* libz.dylib */,
+				778C0FC81B6A79E700A0FE60 /* AudioToolbox.framework */,
+				778C0FC91B6A79E700A0FE60 /* CFNetwork.framework */,
+				778C0FCA1B6A79E700A0FE60 /* CoreGraphics.framework */,
+				778C0FCB1B6A79E700A0FE60 /* CoreLocation.framework */,
+				778C0FCC1B6A79E700A0FE60 /* QuartzCore.framework */,
+				778C0FCD1B6A79E700A0FE60 /* Security.framework */,
+				778C0FCF1B6A79E700A0FE60 /* SystemConfiguration.framework */,
+				778C0FC61B6A798100A0FE60 /* Bolts.framework */,
+				778C0FC41B6A797200A0FE60 /* Parse.framework */,
+				77ACB12E1B55E53E0032A82E /* FBSDKCoreKit.framework */,
+				77ACB12F1B55E53E0032A82E /* FBSDKLoginKit.framework */,
+				77ACB1301B55E53E0032A82E /* FBSDKShareKit.framework */,
+				776035C21B552ECD009C7C9F /* Info.plist */,
+				776035C31B552ECD009C7C9F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		776035DD1B552ECD009C7C9F /* facebook-sev7nTests */ = {
+			isa = PBXGroup;
+			children = (
+				776035E01B552ECD009C7C9F /* facebook_sev7nTests.m */,
+				776035DE1B552ECD009C7C9F /* Supporting Files */,
+			);
+			path = "facebook-sev7nTests";
+			sourceTree = "<group>";
+		};
+		776035DE1B552ECD009C7C9F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				776035DF1B552ECD009C7C9F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		776035BD1B552ECD009C7C9F /* facebook-sev7n */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 776035E41B552ECD009C7C9F /* Build configuration list for PBXNativeTarget "facebook-sev7n" */;
+			buildPhases = (
+				776035BA1B552ECD009C7C9F /* Sources */,
+				776035BB1B552ECD009C7C9F /* Frameworks */,
+				776035BC1B552ECD009C7C9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "facebook-sev7n";
+			productName = "facebook-sev7n";
+			productReference = 776035BE1B552ECD009C7C9F /* facebook-sev7n.app */;
+			productType = "com.apple.product-type.application";
+		};
+		776035D91B552ECD009C7C9F /* facebook-sev7nTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 776035E71B552ECD009C7C9F /* Build configuration list for PBXNativeTarget "facebook-sev7nTests" */;
+			buildPhases = (
+				776035D61B552ECD009C7C9F /* Sources */,
+				776035D71B552ECD009C7C9F /* Frameworks */,
+				776035D81B552ECD009C7C9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				776035DC1B552ECD009C7C9F /* PBXTargetDependency */,
+			);
+			name = "facebook-sev7nTests";
+			productName = "facebook-sev7nTests";
+			productReference = 776035DA1B552ECD009C7C9F /* facebook-sev7nTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		776035B61B552ECD009C7C9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = sev7n;
+				TargetAttributes = {
+					776035BD1B552ECD009C7C9F = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = V98QDSD7WQ;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
+					};
+					776035D91B552ECD009C7C9F = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 776035BD1B552ECD009C7C9F;
+					};
+				};
+			};
+			buildConfigurationList = 776035B91B552ECD009C7C9F /* Build configuration list for PBXProject "facebook-sev7n" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 776035B51B552ECD009C7C9F;
+			productRefGroup = 776035BF1B552ECD009C7C9F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				776035BD1B552ECD009C7C9F /* facebook-sev7n */,
+				776035D91B552ECD009C7C9F /* facebook-sev7nTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		776035BC1B552ECD009C7C9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				776035D01B552ECD009C7C9F /* Main.storyboard in Resources */,
+				776035D51B552ECD009C7C9F /* LaunchScreen.xib in Resources */,
+				776035D21B552ECD009C7C9F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		776035D81B552ECD009C7C9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		776035BA1B552ECD009C7C9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77135A631B592BF700E23BB4 /* SCProfilePictureButton.m in Sources */,
+				776035C71B552ECD009C7C9F /* AppDelegate.m in Sources */,
+				776035C41B552ECD009C7C9F /* main.m in Sources */,
+				77653D2F1B59F54A005D6BAC /* SEVLogoutViewController.m in Sources */,
+				776035CD1B552ECD009C7C9F /* SEVNovoMainViewController.m in Sources */,
+				774D62781B6917A000762FF4 /* SEVNovoDetalhesTableViewController.m in Sources */,
+				77B9BA691B6A4D8F00DF7517 /* SEVPerfilNavigationController.m in Sources */,
+				77653D2C1B59F3B0005D6BAC /* SEVLoginViewController.m in Sources */,
+				777EB9501B6BC4C70027292B /* SEVServicosDisponiveisTableViewCell.m in Sources */,
+				774C33001B66B2F100BDA5BE /* SEVServicoMainViewController.m in Sources */,
+				7773F0821B6AD37700A64113 /* SEVModel.m in Sources */,
+				774D62751B6901AA00762FF4 /* SEVServicoNavigationController.m in Sources */,
+				776035CA1B552ECD009C7C9F /* facebook_sev7n.xcdatamodeld in Sources */,
+				777199351B67D14F00AFBD44 /* SEVMainTabBarController.m in Sources */,
+				7773F0851B6B187700A64113 /* MBProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		776035D61B552ECD009C7C9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				776035E11B552ECD009C7C9F /* facebook_sev7nTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		776035DC1B552ECD009C7C9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 776035BD1B552ECD009C7C9F /* facebook-sev7n */;
+			targetProxy = 776035DB1B552ECD009C7C9F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		776035CE1B552ECD009C7C9F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				776035CF1B552ECD009C7C9F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		776035D31B552ECD009C7C9F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				776035D41B552ECD009C7C9F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		776035E21B552ECD009C7C9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		776035E31B552ECD009C7C9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		776035E51B552ECD009C7C9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/facebook-sev7n",
+				);
+				INFOPLIST_FILE = "facebook-sev7n/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.sev7n.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		776035E61B552ECD009C7C9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/facebook-sev7n",
+				);
+				INFOPLIST_FILE = "facebook-sev7n/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.sev7n.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		776035E81B552ECD009C7C9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "facebook-sev7nTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.sev7n.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/facebook-sev7n.app/facebook-sev7n";
+			};
+			name = Debug;
+		};
+		776035E91B552ECD009C7C9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "facebook-sev7nTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.sev7n.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/facebook-sev7n.app/facebook-sev7n";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		776035B91B552ECD009C7C9F /* Build configuration list for PBXProject "facebook-sev7n" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				776035E21B552ECD009C7C9F /* Debug */,
+				776035E31B552ECD009C7C9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		776035E41B552ECD009C7C9F /* Build configuration list for PBXNativeTarget "facebook-sev7n" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				776035E51B552ECD009C7C9F /* Debug */,
+				776035E61B552ECD009C7C9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		776035E71B552ECD009C7C9F /* Build configuration list for PBXNativeTarget "facebook-sev7nTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				776035E81B552ECD009C7C9F /* Debug */,
+				776035E91B552ECD009C7C9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		776035C81B552ECD009C7C9F /* facebook_sev7n.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				776035C91B552ECD009C7C9F /* facebook_sev7n.xcdatamodel */,
+			);
+			currentVersion = 776035C91B552ECD009C7C9F /* facebook_sev7n.xcdatamodel */;
+			path = facebook_sev7n.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 776035B61B552ECD009C7C9F /* Project object */;
+}
