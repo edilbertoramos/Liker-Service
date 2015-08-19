@@ -95,6 +95,24 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+  
+    //Salva proposta
+    /*
+    SEVModel *model = [[SEVModel alloc] init];
+
+    [model salvaPropostaNoServico:servicos[indexPath.row] completion:^(BOOL finished) {
+        
+        NSLog(finished ? @"Yes" : @"No");
+        if (finished ? @"Yes" : @"No"){
+            printf("Proposta bem sucedida");
+        }
+    }];
+    */
+    
+    
+}
+
 /*
 #pragma mark - Navigation
 
