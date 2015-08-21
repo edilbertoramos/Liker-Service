@@ -21,7 +21,8 @@
         servico[@"descricao"] = descricao;
         servico[@"detalhe"] = detalhe;
         servico[@"tipo"] = tipo;
-        
+        servico[@"telefone"] = telefone;
+
         if (image1){
             servico[@"image1"] = [self imageFiles:image1 andName:@"image1"];
         }
@@ -138,6 +139,35 @@
     return  servicos.findObjects;
 
 }
+
+- (void)buscaImageWithServico: (NSDictionary *)servico andWithIndex: (NSInteger)index andWithSize: (CGSize)size completion:(myImge) compblock{
+    //Query image Parse
+    
+    PFFile *userImageFile = servico[[NSString stringWithFormat:@"image%ld", index]];
+    [userImageFile getDataInBackgroundWithBlock:^(NSData *imageData, NSError *error) {
+        if (!error) {
+            NSLog(@"\n\n\nsucedido image%ld",index);
+            
+            CGRect rect = CGRectMake(0,0,size.width,size.height);
+            UIGraphicsBeginImageContext( rect.size );
+            [[UIImage imageWithData:imageData] drawInRect:rect];
+            UIImage *picture1 = UIGraphicsGetImageFromCurrentImageContext();
+            UIGraphicsEndImageContext();
+            
+            NSData *imageData = UIImagePNGRepresentation(picture1);
+            UIImage *img=[UIImage imageWithData:imageData];
+            
+            compblock(img);
+            
+            
+        }else{
+        
+            NSLog(@"\n\n\nerro image%ld",index);
+
+        }
+    }];
+}
+
 
 
 

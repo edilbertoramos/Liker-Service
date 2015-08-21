@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2436E4C11B84CF7A002EA137 /* SEVDetalhesServicoDisponivelTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2436E4C01B84CF7A002EA137 /* SEVDetalhesServicoDisponivelTableViewController.m */; };
+		2436E4C41B862048002EA137 /* SEVServiceImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2436E4C31B862048002EA137 /* SEVServiceImageViewController.m */; };
 		77135A631B592BF700E23BB4 /* SCProfilePictureButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 77135A621B592BF700E23BB4 /* SCProfilePictureButton.m */; };
 		774C33001B66B2F100BDA5BE /* SEVServicoMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 774C32FF1B66B2F100BDA5BE /* SEVServicoMainViewController.m */; };
 		774D62751B6901AA00762FF4 /* SEVServicoNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 774D62741B6901AA00762FF4 /* SEVServicoNavigationController.m */; };
@@ -55,6 +57,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2436E4BF1B84CF7A002EA137 /* SEVDetalhesServicoDisponivelTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEVDetalhesServicoDisponivelTableViewController.h; sourceTree = "<group>"; };
+		2436E4C01B84CF7A002EA137 /* SEVDetalhesServicoDisponivelTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEVDetalhesServicoDisponivelTableViewController.m; sourceTree = "<group>"; };
+		2436E4C21B862048002EA137 /* SEVServiceImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEVServiceImageViewController.h; sourceTree = "<group>"; };
+		2436E4C31B862048002EA137 /* SEVServiceImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEVServiceImageViewController.m; sourceTree = "<group>"; };
 		77135A611B592BF700E23BB4 /* SCProfilePictureButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCProfilePictureButton.h; sourceTree = "<group>"; };
 		77135A621B592BF700E23BB4 /* SCProfilePictureButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCProfilePictureButton.m; sourceTree = "<group>"; };
 		774C32FE1B66B2F100BDA5BE /* SEVServicoMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEVServicoMainViewController.h; sourceTree = "<group>"; };
@@ -181,6 +187,10 @@
 				77653D2D1B59F54A005D6BAC /* SEVLogoutViewController.h */,
 				77653D2E1B59F54A005D6BAC /* SEVLogoutViewController.m */,
 				776035CE1B552ECD009C7C9F /* Main.storyboard */,
+				2436E4C21B862048002EA137 /* SEVServiceImageViewController.h */,
+				2436E4C31B862048002EA137 /* SEVServiceImageViewController.m */,
+				2436E4BF1B84CF7A002EA137 /* SEVDetalhesServicoDisponivelTableViewController.h */,
+				2436E4C01B84CF7A002EA137 /* SEVDetalhesServicoDisponivelTableViewController.m */,
 				777EB94E1B6BC4C70027292B /* SEVServicosDisponiveisTableViewCell.h */,
 				777EB94F1B6BC4C70027292B /* SEVServicosDisponiveisTableViewCell.m */,
 				77B9BA671B6A4D8F00DF7517 /* SEVPerfilNavigationController.h */,
@@ -349,7 +359,9 @@
 				77135A631B592BF700E23BB4 /* SCProfilePictureButton.m in Sources */,
 				776035C71B552ECD009C7C9F /* AppDelegate.m in Sources */,
 				776035C41B552ECD009C7C9F /* main.m in Sources */,
+				2436E4C11B84CF7A002EA137 /* SEVDetalhesServicoDisponivelTableViewController.m in Sources */,
 				77653D2F1B59F54A005D6BAC /* SEVLogoutViewController.m in Sources */,
+				2436E4C41B862048002EA137 /* SEVServiceImageViewController.m in Sources */,
 				776035CD1B552ECD009C7C9F /* SEVNovoMainViewController.m in Sources */,
 				774D62781B6917A000762FF4 /* SEVNovoDetalhesTableViewController.m in Sources */,
 				77B9BA691B6A4D8F00DF7517 /* SEVPerfilNavigationController.m in Sources */,
