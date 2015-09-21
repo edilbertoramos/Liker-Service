@@ -10,9 +10,10 @@
 
 @interface SEVServiceImageViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
+@property (nonatomic) NSArray *images;
 
-@property (nonatomic) UIImage *image;
+@property (nonatomic) NSUInteger imageIndex;
+
 
 @end

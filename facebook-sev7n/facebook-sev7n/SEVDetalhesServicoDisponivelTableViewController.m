@@ -11,6 +11,7 @@
 #import "SEVServiceImageViewController.h"
 @interface SEVDetalhesServicoDisponivelTableViewController (){
     SEVModel *model;
+    NSMutableArray *images;
 }
 
 @end
@@ -22,6 +23,7 @@
     [super viewDidLoad];
     
     model = [[SEVModel alloc] init];
+    images = [@[] mutableCopy];
     
     self.tipoLabel.text = [self.dictionary objectForKey:@"tipo"];
     self.enderecoLabel.text = [self.dictionary objectForKey:@"endereco"];
@@ -33,8 +35,9 @@
     
     [model buscaImageWithServico:self.dictionary andWithIndex:1 andWithSize:size completion:^(UIImage *image){
         if (image) {
-        self.oneImage.backgroundColor = [UIColor colorWithPatternImage:image];
+            self.oneImage.backgroundColor = [UIColor colorWithPatternImage:image];
             self.oneImage.imageView.image = image;
+            [images addObject:image];
 
         }
     }];
@@ -42,16 +45,20 @@
         if (image) {
             self.twoImage.backgroundColor = [UIColor colorWithPatternImage:image];
             self.twoImage.imageView.image = image;
-        }
+            [images addObject:image];
+}
     }];
     [model buscaImageWithServico:self.dictionary andWithIndex:3 andWithSize:size completion:^(UIImage *image){
         if (image) {
             self.threeImage.backgroundColor = [UIColor colorWithPatternImage:image];
             self.threeImage.imageView.image = image;
-        }
+            [images addObject:image];
+}
         
     }];
-    
+    self.threeImage.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"todosIcon"]];
+    self.threeImage.imageView.image = [UIImage imageNamed:@"todosIcon"];
+
     
 }
 
@@ -90,27 +97,28 @@
     
     SEVServiceImageViewController *destination = segue.destinationViewController;
 
+    
+    destination.images = @[self.oneImage.imageView.image,self.twoImage.imageView.image,self.threeImage.imageView.image];
+    
+    destination.images = images;
+    
+    
     if ([[segue identifier] isEqualToString:@"segueImage1"]) {
-        NSLog(@"\n\n\nimage1");
-
         
-        destination.image = self.oneImage.imageView.image;
+        destination.imageIndex = 0;
         
     }
     if ([[segue identifier] isEqualToString:@"segueImage2"]) {
         
-        
-        destination.image = self.twoImage.imageView.image;
-        
-        NSLog(@"\n\n\nimage2");
-        
+        destination.imageIndex = 1;
+
     }
     if ([[segue identifier] isEqualToString:@"segueImage3"]) {
         
         NSLog(@"\n\n\nimage3");
 
-        destination.image = self.threeImage.imageView.image;
-        
+        destination.imageIndex = 2;
+
     }
     
     
