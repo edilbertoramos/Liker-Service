@@ -39,7 +39,7 @@
 
 }
 
-- (void)queryServicesWithType: (NSString *)tipo{
+- (void)queryServicesWithType: (NSString *)tipo {
 
     servicos = [SEVModel BuscaServicosPorTipo:tipo];
     [self.tableView reloadData];
