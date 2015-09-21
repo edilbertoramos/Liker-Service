@@ -454,7 +454,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0so-se-rhF">
                                         <rect key="frame" x="0.0" y="0.0" width="540" height="90"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uhg-cY-WOu">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uhg-cY-WOu">
                                                 <rect key="frame" x="189" y="7" width="72" height="76"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 <state key="normal" image="Pint-select"/>
@@ -463,7 +463,7 @@
                                                     <action selector="pinturaButtonPressed:" destination="fOk-ib-PfD" eventType="touchUpInside" id="rUQ-hP-YUy"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkq-V1-Xhv">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkq-V1-Xhv">
                                                 <rect key="frame" x="279" y="7" width="72" height="76"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 <state key="normal" image="Hidro-select"/>
@@ -472,7 +472,7 @@
                                                     <action selector="hidraulicaButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sHs-Uc-HU6"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FtH-gm-6gk">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FtH-gm-6gk">
                                                 <rect key="frame" x="369" y="7" width="72" height="76"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 <state key="normal" image="Limp-select"/>
@@ -480,7 +480,7 @@
                                                     <action selector="limpezaButtonPressed:" destination="fOk-ib-PfD" eventType="touchUpInside" id="3Cz-G8-h2W"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="anp-dG-lQ0">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="anp-dG-lQ0">
                                                 <rect key="frame" x="459" y="7" width="72" height="76"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 <state key="normal" image="Chav-select"/>
@@ -488,7 +488,7 @@
                                                     <action selector="chaveiroButtonPressed:" destination="fOk-ib-PfD" eventType="touchUpInside" id="pAl-Ka-dwI"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8L-Th-xS0">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8L-Th-xS0">
                                                 <rect key="frame" x="99" y="7" width="72" height="76"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 <state key="normal" image="Alv-select"/>
@@ -498,9 +498,10 @@
                                                     <action selector="alvenariaButtonPressed:" destination="fOk-ib-PfD" eventType="touchUpInside" id="Amd-V7-RHt"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kk8-Lh-gzb">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kk8-Lh-gzb">
                                                 <rect key="frame" x="8" y="7" width="72" height="76"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" image="Elet-select"/>
                                                 <connections>
                                                     <action selector="eletricaButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="94r-ta-NNm"/>
                                                     <action selector="eletricaButtonPressed:" destination="fOk-ib-PfD" eventType="touchUpInside" id="ybD-a2-QAb"/>
@@ -818,6 +819,7 @@
         <image name="Alv-desselect" width="72" height="76"/>
         <image name="Alv-select" width="72" height="76"/>
         <image name="Chav-select" width="72" height="76"/>
+        <image name="Elet-select" width="72" height="76"/>
         <image name="Hidro-select" width="72" height="76"/>
         <image name="Limp-select" width="72" height="76"/>
         <image name="Pint-select" width="72" height="76"/>
