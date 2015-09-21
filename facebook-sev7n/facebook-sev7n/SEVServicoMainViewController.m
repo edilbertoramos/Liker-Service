@@ -48,13 +48,17 @@
 
 - (IBAction)chaveiroButtonPressed:(id)sender {
     [self queryServicesWithType:[SEVModel chaveiro]];
+    
 }
 - (IBAction)limpezaButtonPressed:(id)sender {
     [self queryServicesWithType:[SEVModel limpeza]];
 }
 
 - (IBAction)eletricaButtonPressed:(id)sender {
+    self.btEletrica.imageView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Elet-desselect"]];
+    //[self.btEletrica setImage:<#(nullable UIImage *)#> forState:<#(UIControlState)#>]
     [self queryServicesWithType:[SEVModel eletrica]];
+
 }
 - (IBAction)alvenariaButtonPressed:(id)sender {
     [self queryServicesWithType:[SEVModel alvenaria]];

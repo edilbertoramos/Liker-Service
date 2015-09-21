@@ -12,5 +12,6 @@
 #import "SCProfilePictureButton.h"
 
 @interface SEVServicoMainViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UIButton *btEletrica;
 
 @end
