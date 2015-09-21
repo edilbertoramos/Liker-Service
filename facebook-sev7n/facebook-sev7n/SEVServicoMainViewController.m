@@ -12,7 +12,7 @@
 #import "SEVServicosDisponiveisTableViewCell.h"
 #import "SEVDetalhesServicoDisponivelTableViewController.h"
 
-@interface SEVServicoMainViewController (){
+@interface SEVServicoMainViewController () {
     NSArray *servicos;
     NSString *servicoSelecionado;
 
@@ -47,33 +47,82 @@
 }
 
 - (IBAction)chaveiroButtonPressed:(id)sender {
+    [self desselectImageButton];
     [self queryServicesWithType:[SEVModel chaveiro]];
-    
+    [self selectImageButton];
+
 }
 - (IBAction)limpezaButtonPressed:(id)sender {
+    [self desselectImageButton];
     [self queryServicesWithType:[SEVModel limpeza]];
+    [self selectImageButton];
 }
 
 - (IBAction)eletricaButtonPressed:(id)sender {
-    self.btEletrica.imageView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Elet-desselect"]];
-    //[self.btEletrica setImage:<#(nullable UIImage *)#> forState:<#(UIControlState)#>]
+    [self desselectImageButton];
     [self queryServicesWithType:[SEVModel eletrica]];
-
+    [self selectImageButton];
+    
 }
 - (IBAction)alvenariaButtonPressed:(id)sender {
+    [self desselectImageButton];
     [self queryServicesWithType:[SEVModel alvenaria]];
+    [self selectImageButton];
 }
 - (IBAction)pinturaButtonPressed:(id)sender {
+    [self desselectImageButton];
     [self queryServicesWithType:[SEVModel pintura]];
+    [self selectImageButton];
 }
 - (IBAction)hidraulicaButtonPressed:(id)sender {
+    [self desselectImageButton];
     [self queryServicesWithType:[SEVModel hidraulica]];
+    [self selectImageButton];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+// procedimento para desselecionar os botões, junto com as imagens
+- (void)desselectImageButton{
+    
+    if ([[SEVModel servicoSelecionado] isEqualToString:@"eletrica"]) {
+        [self.btEletrica setImage:[UIImage imageNamed:@"Elet-select"] forState:UIControlStateNormal];
+    }else if ([[SEVModel servicoSelecionado] isEqualToString:@"chaveiro"]) {
+        [self.btChaveiro setImage:[UIImage imageNamed:@"Chav-select"] forState:UIControlStateNormal];
+    }else if ([[SEVModel servicoSelecionado] isEqualToString:@"hidraulica"]) {
+        [self.btHidraulica setImage:[UIImage imageNamed:@"Hidro-select"] forState:UIControlStateNormal];
+    }else if ([[SEVModel servicoSelecionado] isEqualToString:@"alvenaria"]) {
+        [self.btAlvenaria setImage:[UIImage imageNamed:@"Alv-select"] forState:UIControlStateNormal];
+    }else if ([[SEVModel servicoSelecionado] isEqualToString:@"limpeza"]) {
+        [self.btLimpeza setImage:[UIImage imageNamed:@"Limp-select"] forState:UIControlStateNormal];
+    }else if ([[SEVModel servicoSelecionado] isEqualToString:@"pintura"]) {
+        [self.btPintura setImage:[UIImage imageNamed:@"Pint-select"] forState:UIControlStateNormal];
+    }
+    
+}
+
+// procedimento para selecionar os botões, junto com as imagens
+- (void)selectImageButton{
+    
+    if ([[SEVModel servicoSelecionado] isEqualToString:@"eletrica"]) {
+        [self.btEletrica setImage:[UIImage imageNamed:@"Elet-desselect"] forState:UIControlStateNormal];
+    }else if ([[SEVModel servicoSelecionado] isEqualToString:@"chaveiro"]) {
+        [self.btChaveiro setImage:[UIImage imageNamed:@"Chav-desselect"] forState:UIControlStateNormal];
+    }else if ([[SEVModel servicoSelecionado] isEqualToString:@"hidraulica"]) {
+        [self.btHidraulica setImage:[UIImage imageNamed:@"Hidro-desselect"] forState:UIControlStateNormal];
+    }else if ([[SEVModel servicoSelecionado] isEqualToString:@"alvenaria"]) {
+        [self.btAlvenaria setImage:[UIImage imageNamed:@"Alv-desselect"] forState:UIControlStateNormal];
+    }else if ([[SEVModel servicoSelecionado] isEqualToString:@"limpeza"]) {
+        [self.btLimpeza setImage:[UIImage imageNamed:@"Limp-desselect"] forState:UIControlStateNormal];
+    }else if ([[SEVModel servicoSelecionado] isEqualToString:@"pintura"]) {
+        [self.btPintura setImage:[UIImage imageNamed:@"Pint-desselect"] forState:UIControlStateNormal];
+    }
+    
+}
+
 - (IBAction)novoServico:(id)sender {
     if ([PFUser currentUser]) {
         [self performSegueWithIdentifier:@"novoMain" sender:self];
