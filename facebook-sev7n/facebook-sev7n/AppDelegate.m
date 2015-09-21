@@ -39,6 +39,21 @@
     // [Optional] Track statistics around application opens.
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
+    [[UINavigationBar appearance] setBarTintColor:[UIColor blackColor]];
+    NSShadow *shadow = [[NSShadow alloc] init];
+    shadow.shadowColor = [UIColor blackColor];
+    shadow.shadowOffset = CGSizeMake(1, 0);
+    
+    NSDictionary *titleTextAttributes = @{NSForegroundColorAttributeName:[UIColor whiteColor],
+                                          NSShadowAttributeName:shadow};
+    
+    [[UINavigationBar appearance] setTitleTextAttributes:titleTextAttributes];
+    [[UITableView appearance] setBackgroundColor: [UIColor blackColor]];
+    [[UITabBar appearance] setBarTintColor: [UIColor blackColor]];
+    [[UITabBar appearance] setTintColor: [UIColor whiteColor]];
+    [[UITabBar appearance] setTranslucent:NO];
+    [[UINavigationBar appearance] setTranslucent:NO];
+   // [UIColor colorWithRed:1 green:0.831 blue:0.29 alpha:1] /*#ffd44a*/
     return [[FBSDKApplicationDelegate sharedInstance] application:application
                                     didFinishLaunchingWithOptions:launchOptions];
 }

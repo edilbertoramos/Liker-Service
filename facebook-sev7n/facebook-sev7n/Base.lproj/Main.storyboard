@@ -129,7 +129,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1770.5" y="924.5"/>
+            <point key="canvasLocation" x="1827.5" y="924.5"/>
         </scene>
         <!--Perfil Navigation Controller-->
         <scene sceneID="Kpe-8b-BbQ">
@@ -401,81 +401,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ard-E8-6u2">
-                                <rect key="frame" x="0.0" y="64" width="375" height="90"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0so-se-rhF">
-                                        <rect key="frame" x="0.0" y="0.0" width="540" height="90"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uhg-cY-WOu">
-                                                <rect key="frame" x="180" y="0.0" width="90" height="90"/>
-                                                <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" backgroundImage="pinturaIcon"/>
-                                                <connections>
-                                                    <action selector="pinturaButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Z8T-8A-LL7"/>
-                                                    <action selector="pinturaButtonPressed:" destination="fOk-ib-PfD" eventType="touchUpInside" id="rUQ-hP-YUy"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkq-V1-Xhv">
-                                                <rect key="frame" x="270" y="0.0" width="90" height="90"/>
-                                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" backgroundImage="hidraulicaIcon"/>
-                                                <connections>
-                                                    <action selector="hidraulicaButtonPressed:" destination="fOk-ib-PfD" eventType="touchUpInside" id="AqD-Am-YuX"/>
-                                                    <action selector="hidraulicaButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sHs-Uc-HU6"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FtH-gm-6gk">
-                                                <rect key="frame" x="360" y="0.0" width="90" height="90"/>
-                                                <color key="backgroundColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" backgroundImage="limpezaIcon"/>
-                                                <connections>
-                                                    <action selector="limpezaButtonPressed:" destination="fOk-ib-PfD" eventType="touchUpInside" id="3Cz-G8-h2W"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="anp-dG-lQ0">
-                                                <rect key="frame" x="450" y="0.0" width="90" height="90"/>
-                                                <color key="backgroundColor" red="0.0" green="0.50196078430000002" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" backgroundImage="chaveiroIcon"/>
-                                                <connections>
-                                                    <action selector="chaveiroButtonPressed:" destination="fOk-ib-PfD" eventType="touchUpInside" id="pAl-Ka-dwI"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8L-Th-xS0">
-                                                <rect key="frame" x="90" y="0.0" width="90" height="90"/>
-                                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" backgroundImage="alvenariaIcon"/>
-                                                <connections>
-                                                    <action selector="alvenariaButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3yk-az-kt8"/>
-                                                    <action selector="alvenariaButtonPressed:" destination="fOk-ib-PfD" eventType="touchUpInside" id="Amd-V7-RHt"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kk8-Lh-gzb">
-                                                <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
-                                                <color key="backgroundColor" red="0.89451152150000002" green="0.72628573949999997" blue="0.151231382" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" backgroundImage="eletricaIcon"/>
-                                                <connections>
-                                                    <action selector="eletricaButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="94r-ta-NNm"/>
-                                                    <action selector="eletricaButtonPressed:" destination="fOk-ib-PfD" eventType="touchUpInside" id="ybD-a2-QAb"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="540" id="CKw-8U-a1Q"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="0so-se-rhF" secondAttribute="bottom" id="0bh-Y5-8MD"/>
-                                    <constraint firstItem="0so-se-rhF" firstAttribute="top" secondItem="ard-E8-6u2" secondAttribute="top" id="CI7-Fh-o1j"/>
-                                    <constraint firstAttribute="trailing" secondItem="0so-se-rhF" secondAttribute="trailing" id="NMA-ra-MrW"/>
-                                    <constraint firstItem="0so-se-rhF" firstAttribute="leading" secondItem="ard-E8-6u2" secondAttribute="leading" id="Xpf-ZC-TNE"/>
-                                </constraints>
-                            </scrollView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="4iC-Da-tFc">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="4iC-Da-tFc">
                                 <rect key="frame" x="0.0" y="154" width="375" height="513"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="70" id="QVi-qU-88Q" customClass="SEVServicosDisponiveisTableViewCell">
                                         <rect key="frame" x="0.0" y="22" width="375" height="70"/>
@@ -484,19 +412,32 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eH4-Cz-eQN">
-                                                    <rect key="frame" x="22" y="11" width="328" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fga-pD-r8A">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fga-pD-r8A">
                                                     <rect key="frame" x="23" y="36" width="328" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eH4-Cz-eQN">
+                                                    <rect key="frame" x="23" y="8" width="328" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="E2c-al-kFx"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
                                             </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="fga-pD-r8A" firstAttribute="top" secondItem="eH4-Cz-eQN" secondAttribute="bottom" constant="4" id="V8v-VZ-1gg"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="fga-pD-r8A" secondAttribute="bottom" constant="4.5" id="WNo-CU-R2i"/>
+                                                <constraint firstItem="eH4-Cz-eQN" firstAttribute="leading" secondItem="BMs-Dd-Wf3" secondAttribute="leadingMargin" constant="14" id="YkD-w5-jyj"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="eH4-Cz-eQN" secondAttribute="trailing" constant="17" id="hDI-Dr-vtJ"/>
+                                                <constraint firstItem="eH4-Cz-eQN" firstAttribute="top" secondItem="BMs-Dd-Wf3" secondAttribute="topMargin" constant="3" id="kM1-2s-bYu"/>
+                                                <constraint firstItem="fga-pD-r8A" firstAttribute="leading" secondItem="BMs-Dd-Wf3" secondAttribute="leadingMargin" constant="15" id="oGa-mX-tkW"/>
+                                                <constraint firstItem="fga-pD-r8A" firstAttribute="centerX" secondItem="BMs-Dd-Wf3" secondAttribute="centerX" id="q0l-Wk-mD6"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="labelPrincipal" destination="eH4-Cz-eQN" id="VSG-VB-spU"/>
@@ -509,6 +450,94 @@
                                     <outlet property="delegate" destination="fOk-ib-PfD" id="sZS-WF-djj"/>
                                 </connections>
                             </tableView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ard-E8-6u2">
+                                <rect key="frame" x="0.0" y="64" width="375" height="90"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0so-se-rhF">
+                                        <rect key="frame" x="0.0" y="0.0" width="540" height="90"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uhg-cY-WOu">
+                                                <rect key="frame" x="189" y="7" width="72" height="76"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" image="Pint-select"/>
+                                                <connections>
+                                                    <action selector="pinturaButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Z8T-8A-LL7"/>
+                                                    <action selector="pinturaButtonPressed:" destination="fOk-ib-PfD" eventType="touchUpInside" id="rUQ-hP-YUy"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkq-V1-Xhv">
+                                                <rect key="frame" x="279" y="7" width="72" height="76"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" image="Hidro-select"/>
+                                                <connections>
+                                                    <action selector="hidraulicaButtonPressed:" destination="fOk-ib-PfD" eventType="touchUpInside" id="AqD-Am-YuX"/>
+                                                    <action selector="hidraulicaButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sHs-Uc-HU6"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FtH-gm-6gk">
+                                                <rect key="frame" x="369" y="7" width="72" height="76"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" image="Limp-select"/>
+                                                <connections>
+                                                    <action selector="limpezaButtonPressed:" destination="fOk-ib-PfD" eventType="touchUpInside" id="3Cz-G8-h2W"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="anp-dG-lQ0">
+                                                <rect key="frame" x="459" y="7" width="72" height="76"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" image="Chav-select"/>
+                                                <connections>
+                                                    <action selector="chaveiroButtonPressed:" destination="fOk-ib-PfD" eventType="touchUpInside" id="pAl-Ka-dwI"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8L-Th-xS0">
+                                                <rect key="frame" x="99" y="7" width="72" height="76"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" image="Alv-select"/>
+                                                <state key="highlighted" image="Alv-desselect"/>
+                                                <connections>
+                                                    <action selector="alvenariaButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3yk-az-kt8"/>
+                                                    <action selector="alvenariaButtonPressed:" destination="fOk-ib-PfD" eventType="touchUpInside" id="Amd-V7-RHt"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kk8-Lh-gzb">
+                                                <rect key="frame" x="8" y="7" width="72" height="76"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" image="Elet-select"/>
+                                                <connections>
+                                                    <action selector="eletricaButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="94r-ta-NNm"/>
+                                                    <action selector="eletricaButtonPressed:" destination="fOk-ib-PfD" eventType="touchUpInside" id="ybD-a2-QAb"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="lkq-V1-Xhv" firstAttribute="leading" secondItem="Uhg-cY-WOu" secondAttribute="trailing" constant="18" id="0Oi-Ww-1wx"/>
+                                            <constraint firstItem="FtH-gm-6gk" firstAttribute="top" secondItem="anp-dG-lQ0" secondAttribute="top" id="1U7-BJ-8rJ"/>
+                                            <constraint firstItem="lkq-V1-Xhv" firstAttribute="centerY" secondItem="0so-se-rhF" secondAttribute="centerY" id="3tl-lt-KNv"/>
+                                            <constraint firstAttribute="width" constant="540" id="CKw-8U-a1Q"/>
+                                            <constraint firstItem="lkq-V1-Xhv" firstAttribute="top" secondItem="Uhg-cY-WOu" secondAttribute="top" id="FWc-ru-8n4"/>
+                                            <constraint firstItem="FtH-gm-6gk" firstAttribute="leading" secondItem="lkq-V1-Xhv" secondAttribute="trailing" constant="18" id="Fpp-sa-ukt"/>
+                                            <constraint firstItem="anp-dG-lQ0" firstAttribute="leading" secondItem="FtH-gm-6gk" secondAttribute="trailing" constant="18" id="Gvt-aF-5fe"/>
+                                            <constraint firstItem="U8L-Th-xS0" firstAttribute="leading" secondItem="Kk8-Lh-gzb" secondAttribute="trailing" constant="19" id="KmC-LJ-j4H"/>
+                                            <constraint firstItem="Kk8-Lh-gzb" firstAttribute="leading" secondItem="0so-se-rhF" secondAttribute="leadingMargin" id="NCC-lV-TRJ"/>
+                                            <constraint firstItem="Uhg-cY-WOu" firstAttribute="leading" secondItem="U8L-Th-xS0" secondAttribute="trailing" constant="18" id="Nj9-Py-qiq"/>
+                                            <constraint firstItem="lkq-V1-Xhv" firstAttribute="top" secondItem="FtH-gm-6gk" secondAttribute="top" id="XxZ-Cj-FO4"/>
+                                            <constraint firstItem="Uhg-cY-WOu" firstAttribute="top" secondItem="U8L-Th-xS0" secondAttribute="top" id="ii6-Dv-wdb"/>
+                                            <constraint firstItem="Kk8-Lh-gzb" firstAttribute="top" secondItem="0so-se-rhF" secondAttribute="top" constant="7" id="rRi-aa-O0z"/>
+                                            <constraint firstItem="U8L-Th-xS0" firstAttribute="top" secondItem="Kk8-Lh-gzb" secondAttribute="top" id="txQ-Jq-pjK"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="0so-se-rhF" secondAttribute="bottom" id="0bh-Y5-8MD"/>
+                                    <constraint firstItem="0so-se-rhF" firstAttribute="top" secondItem="ard-E8-6u2" secondAttribute="top" id="CI7-Fh-o1j"/>
+                                    <constraint firstAttribute="trailing" secondItem="0so-se-rhF" secondAttribute="trailing" id="NMA-ra-MrW"/>
+                                    <constraint firstItem="0so-se-rhF" firstAttribute="centerY" secondItem="ard-E8-6u2" secondAttribute="centerY" id="Xh6-nm-qH3"/>
+                                    <constraint firstItem="0so-se-rhF" firstAttribute="leading" secondItem="ard-E8-6u2" secondAttribute="leading" id="Xpf-ZC-TNE"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -530,6 +559,12 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="btAlvenaria" destination="U8L-Th-xS0" id="KYt-D6-sfa"/>
+                        <outlet property="btChaveiro" destination="anp-dG-lQ0" id="gAj-87-eIG"/>
+                        <outlet property="btEletrica" destination="Kk8-Lh-gzb" id="f6V-PW-2fF"/>
+                        <outlet property="btHidraulica" destination="lkq-V1-Xhv" id="rdB-ai-4yD"/>
+                        <outlet property="btLimpeza" destination="FtH-gm-6gk" id="Syr-OE-aos"/>
+                        <outlet property="btPintura" destination="Uhg-cY-WOu" id="mv2-Yd-gaL"/>
                         <outlet property="tableView" destination="4iC-Da-tFc" id="zgb-ed-Dod"/>
                         <segue destination="vXZ-lx-hvc" kind="show" identifier="novoMain" id="gML-2d-9FS"/>
                         <segue destination="EfA-61-gww" kind="push" identifier="DetalhesServicoDisponivel" id="TxI-Mz-eZl"/>
@@ -784,6 +819,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Alv-desselect" width="72" height="76"/>
+        <image name="Alv-select" width="72" height="76"/>
+        <image name="Chav-select" width="72" height="76"/>
+        <image name="Elet-select" width="72" height="76"/>
+        <image name="Hidro-select" width="72" height="76"/>
+        <image name="Limp-select" width="72" height="76"/>
+        <image name="Pint-select" width="72" height="76"/>
         <image name="alvenariaIcon" width="1024" height="1024"/>
         <image name="chaveiroIcon" width="1024" height="1024"/>
         <image name="eletricaIcon" width="1024" height="1024"/>
