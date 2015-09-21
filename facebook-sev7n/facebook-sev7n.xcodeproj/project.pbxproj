@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24117AA81B8771D300905742 /* SEVPageImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24117AA71B8771D300905742 /* SEVPageImageViewController.m */; };
+		2436E4C11B84CF7A002EA137 /* SEVDetalhesServicoDisponivelTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2436E4C01B84CF7A002EA137 /* SEVDetalhesServicoDisponivelTableViewController.m */; };
+		2436E4C41B862048002EA137 /* SEVServiceImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2436E4C31B862048002EA137 /* SEVServiceImageViewController.m */; };
 		77135A631B592BF700E23BB4 /* SCProfilePictureButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 77135A621B592BF700E23BB4 /* SCProfilePictureButton.m */; };
 		774C33001B66B2F100BDA5BE /* SEVServicoMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 774C32FF1B66B2F100BDA5BE /* SEVServicoMainViewController.m */; };
 		774D62751B6901AA00762FF4 /* SEVServicoNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 774D62741B6901AA00762FF4 /* SEVServicoNavigationController.m */; };
@@ -55,6 +58,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24117AA61B8771D300905742 /* SEVPageImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEVPageImageViewController.h; sourceTree = "<group>"; };
+		24117AA71B8771D300905742 /* SEVPageImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEVPageImageViewController.m; sourceTree = "<group>"; };
+		2436E4BF1B84CF7A002EA137 /* SEVDetalhesServicoDisponivelTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEVDetalhesServicoDisponivelTableViewController.h; sourceTree = "<group>"; };
+		2436E4C01B84CF7A002EA137 /* SEVDetalhesServicoDisponivelTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEVDetalhesServicoDisponivelTableViewController.m; sourceTree = "<group>"; };
+		2436E4C21B862048002EA137 /* SEVServiceImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEVServiceImageViewController.h; sourceTree = "<group>"; };
+		2436E4C31B862048002EA137 /* SEVServiceImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEVServiceImageViewController.m; sourceTree = "<group>"; };
 		77135A611B592BF700E23BB4 /* SCProfilePictureButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCProfilePictureButton.h; sourceTree = "<group>"; };
 		77135A621B592BF700E23BB4 /* SCProfilePictureButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCProfilePictureButton.m; sourceTree = "<group>"; };
 		774C32FE1B66B2F100BDA5BE /* SEVServicoMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEVServicoMainViewController.h; sourceTree = "<group>"; };
@@ -143,6 +152,113 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24117AA21B87704A00905742 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7773F0801B6AD37700A64113 /* SEVModel.h */,
+				7773F0811B6AD37700A64113 /* SEVModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		24117AA31B87705F00905742 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				776035C51B552ECD009C7C9F /* AppDelegate.h */,
+				776035C61B552ECD009C7C9F /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		24117AA41B8770A900905742 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				24117AA51B87711B00905742 /* User */,
+				24117AA91B8771E800905742 /* Available Service */,
+				24117AAA1B87729E00905742 /* New Service */,
+				24117AAB1B87732700905742 /* Navigaiton */,
+				24117AAC1B87737700905742 /* Tab Bar */,
+				24117AAD1B87738D00905742 /* Table View Cell */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		24117AA51B87711B00905742 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				77653D2A1B59F3B0005D6BAC /* SEVLoginViewController.h */,
+				77653D2B1B59F3B0005D6BAC /* SEVLoginViewController.m */,
+				77135A611B592BF700E23BB4 /* SCProfilePictureButton.h */,
+				77135A621B592BF700E23BB4 /* SCProfilePictureButton.m */,
+				77653D2D1B59F54A005D6BAC /* SEVLogoutViewController.h */,
+				77653D2E1B59F54A005D6BAC /* SEVLogoutViewController.m */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		24117AA91B8771E800905742 /* Available Service */ = {
+			isa = PBXGroup;
+			children = (
+				774C32FE1B66B2F100BDA5BE /* SEVServicoMainViewController.h */,
+				774C32FF1B66B2F100BDA5BE /* SEVServicoMainViewController.m */,
+				2436E4BF1B84CF7A002EA137 /* SEVDetalhesServicoDisponivelTableViewController.h */,
+				2436E4C01B84CF7A002EA137 /* SEVDetalhesServicoDisponivelTableViewController.m */,
+				2436E4C21B862048002EA137 /* SEVServiceImageViewController.h */,
+				2436E4C31B862048002EA137 /* SEVServiceImageViewController.m */,
+				24117AA61B8771D300905742 /* SEVPageImageViewController.h */,
+				24117AA71B8771D300905742 /* SEVPageImageViewController.m */,
+			);
+			name = "Available Service";
+			sourceTree = "<group>";
+		};
+		24117AAA1B87729E00905742 /* New Service */ = {
+			isa = PBXGroup;
+			children = (
+				776035CB1B552ECD009C7C9F /* SEVNovoMainViewController.h */,
+				776035CC1B552ECD009C7C9F /* SEVNovoMainViewController.m */,
+				774D62761B6917A000762FF4 /* SEVNovoDetalhesTableViewController.h */,
+				774D62771B6917A000762FF4 /* SEVNovoDetalhesTableViewController.m */,
+			);
+			name = "New Service";
+			sourceTree = "<group>";
+		};
+		24117AAB1B87732700905742 /* Navigaiton */ = {
+			isa = PBXGroup;
+			children = (
+				77B9BA671B6A4D8F00DF7517 /* SEVPerfilNavigationController.h */,
+				77B9BA681B6A4D8F00DF7517 /* SEVPerfilNavigationController.m */,
+				774D62731B6901AA00762FF4 /* SEVServicoNavigationController.h */,
+				774D62741B6901AA00762FF4 /* SEVServicoNavigationController.m */,
+			);
+			name = Navigaiton;
+			sourceTree = "<group>";
+		};
+		24117AAC1B87737700905742 /* Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				777199331B67D14F00AFBD44 /* SEVMainTabBarController.h */,
+				777199341B67D14F00AFBD44 /* SEVMainTabBarController.m */,
+			);
+			name = "Tab Bar";
+			sourceTree = "<group>";
+		};
+		24117AAD1B87738D00905742 /* Table View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				777EB94E1B6BC4C70027292B /* SEVServicosDisponiveisTableViewCell.h */,
+				777EB94F1B6BC4C70027292B /* SEVServicosDisponiveisTableViewCell.m */,
+			);
+			name = "Table View Cell";
+			sourceTree = "<group>";
+		};
+		24117AAE1B8773D500905742 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				776035CE1B552ECD009C7C9F /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		776035B51B552ECD009C7C9F = {
 			isa = PBXGroup;
 			children = (
@@ -164,31 +280,10 @@
 		776035C01B552ECD009C7C9F /* facebook-sev7n */ = {
 			isa = PBXGroup;
 			children = (
-				7773F0801B6AD37700A64113 /* SEVModel.h */,
-				7773F0811B6AD37700A64113 /* SEVModel.m */,
-				776035C51B552ECD009C7C9F /* AppDelegate.h */,
-				776035C61B552ECD009C7C9F /* AppDelegate.m */,
-				776035CB1B552ECD009C7C9F /* SEVNovoMainViewController.h */,
-				776035CC1B552ECD009C7C9F /* SEVNovoMainViewController.m */,
-				774D62761B6917A000762FF4 /* SEVNovoDetalhesTableViewController.h */,
-				774D62771B6917A000762FF4 /* SEVNovoDetalhesTableViewController.m */,
-				774C32FE1B66B2F100BDA5BE /* SEVServicoMainViewController.h */,
-				774C32FF1B66B2F100BDA5BE /* SEVServicoMainViewController.m */,
-				77653D2A1B59F3B0005D6BAC /* SEVLoginViewController.h */,
-				77653D2B1B59F3B0005D6BAC /* SEVLoginViewController.m */,
-				77135A611B592BF700E23BB4 /* SCProfilePictureButton.h */,
-				77135A621B592BF700E23BB4 /* SCProfilePictureButton.m */,
-				77653D2D1B59F54A005D6BAC /* SEVLogoutViewController.h */,
-				77653D2E1B59F54A005D6BAC /* SEVLogoutViewController.m */,
-				776035CE1B552ECD009C7C9F /* Main.storyboard */,
-				777EB94E1B6BC4C70027292B /* SEVServicosDisponiveisTableViewCell.h */,
-				777EB94F1B6BC4C70027292B /* SEVServicosDisponiveisTableViewCell.m */,
-				77B9BA671B6A4D8F00DF7517 /* SEVPerfilNavigationController.h */,
-				77B9BA681B6A4D8F00DF7517 /* SEVPerfilNavigationController.m */,
-				774D62731B6901AA00762FF4 /* SEVServicoNavigationController.h */,
-				774D62741B6901AA00762FF4 /* SEVServicoNavigationController.m */,
-				777199331B67D14F00AFBD44 /* SEVMainTabBarController.h */,
-				777199341B67D14F00AFBD44 /* SEVMainTabBarController.m */,
+				24117AA31B87705F00905742 /* AppDelegate */,
+				24117AA21B87704A00905742 /* Model */,
+				24117AAE1B8773D500905742 /* View */,
+				24117AA41B8770A900905742 /* Controller */,
 				776035D11B552ECD009C7C9F /* Images.xcassets */,
 				776035D31B552ECD009C7C9F /* LaunchScreen.xib */,
 				776035C81B552ECD009C7C9F /* facebook_sev7n.xcdatamodeld */,
@@ -349,7 +444,9 @@
 				77135A631B592BF700E23BB4 /* SCProfilePictureButton.m in Sources */,
 				776035C71B552ECD009C7C9F /* AppDelegate.m in Sources */,
 				776035C41B552ECD009C7C9F /* main.m in Sources */,
+				2436E4C11B84CF7A002EA137 /* SEVDetalhesServicoDisponivelTableViewController.m in Sources */,
 				77653D2F1B59F54A005D6BAC /* SEVLogoutViewController.m in Sources */,
+				2436E4C41B862048002EA137 /* SEVServiceImageViewController.m in Sources */,
 				776035CD1B552ECD009C7C9F /* SEVNovoMainViewController.m in Sources */,
 				774D62781B6917A000762FF4 /* SEVNovoDetalhesTableViewController.m in Sources */,
 				77B9BA691B6A4D8F00DF7517 /* SEVPerfilNavigationController.m in Sources */,
@@ -358,6 +455,7 @@
 				774C33001B66B2F100BDA5BE /* SEVServicoMainViewController.m in Sources */,
 				7773F0821B6AD37700A64113 /* SEVModel.m in Sources */,
 				774D62751B6901AA00762FF4 /* SEVServicoNavigationController.m in Sources */,
+				24117AA81B8771D300905742 /* SEVPageImageViewController.m in Sources */,
 				776035CA1B552ECD009C7C9F /* facebook_sev7n.xcdatamodeld in Sources */,
 				777199351B67D14F00AFBD44 /* SEVMainTabBarController.m in Sources */,
 				7773F0851B6B187700A64113 /* MBProgressHUD.m in Sources */,
@@ -494,7 +592,7 @@
 					"$(PROJECT_DIR)/facebook-sev7n",
 				);
 				INFOPLIST_FILE = "facebook-sev7n/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.sev7n.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -512,7 +610,7 @@
 					"$(PROJECT_DIR)/facebook-sev7n",
 				);
 				INFOPLIST_FILE = "facebook-sev7n/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.sev7n.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";

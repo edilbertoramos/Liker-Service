@@ -12,8 +12,10 @@
 @interface SEVModel : NSObject
 
 typedef void(^myCompletion)(BOOL);
+typedef void(^myImge)(UIImage *);
 
 - (void)salvaServicoWithDetalhe:(NSString *)detalhe andDescricao:(NSString *)descricao andEndereco:(NSString *)endereco andTelefone:(NSString *)telefone andImage1:(UIImage *)image1 andImage2:(UIImage *)image2 andImage3:(UIImage *)image3 andTipo:(NSString *)tipo completion:(myCompletion) compblock;
+- (void)salvaPropostaNoServico:(PFObject *)servico completion:(myCompletion) compblock;
 
 - (PFFile *)imageFiles:(UIImage *)image andName:(NSString *)name;
 
@@ -22,6 +24,7 @@ typedef void(^myCompletion)(BOOL);
 + (NSArray *)BuscaServicosComoProfissional;
 
 + (NSArray *)BuscaServicosComoCliente;
+
 + (NSString *)alvenaria;
 + (NSString *)chaveiro;
 + (NSString *)eletrica;
@@ -30,6 +33,8 @@ typedef void(^myCompletion)(BOOL);
 + (NSString *)pintura;
 
 + (NSString *)servicoSelecionado;
+
+- (void)buscaImageWithServico: (NSDictionary *)servico andWithIndex: (NSInteger)index andWithSize: (CGSize)size completion:(myImge) compblock;
 
 @end
 

@@ -21,7 +21,8 @@
         servico[@"descricao"] = descricao;
         servico[@"detalhe"] = detalhe;
         servico[@"tipo"] = tipo;
-        
+        servico[@"telefone"] = telefone;
+
         if (image1){
             servico[@"image1"] = [self imageFiles:image1 andName:@"image1"];
         }
@@ -50,6 +51,27 @@
 
 }
 
+- (void)salvaPropostaNoServico:(PFObject *)servico completion:(myCompletion)compblock{
+
+    PFObject *proposta = [PFObject objectWithClassName:@"Proposta"];
+
+    [proposta setObject:[PFUser currentUser] forKey:@"proposedUser"];
+    
+    [proposta setObject:servico forKey:@"servico"];
+    
+    
+    [proposta saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+            if (succeeded) {
+                compblock(YES);
+            }
+            else
+            {
+                compblock(NO);
+            }
+    }];
+
+}
+
 - (PFFile *)imageFiles:(UIImage *)image andName:(NSString *)name{
     
     NSData *imageData = UIImagePNGRepresentation(image);
@@ -68,6 +90,85 @@
     
     return [servicosDisponiveis findObjects];
 }
+
++ (NSArray *)BuscaServicosComoProfissional{
+    
+    
+    PFQuery *propostasQuery = [PFQuery queryWithClassName:@"Proposta"];
+    
+    [propostasQuery whereKey:@"proposedUser" equalTo:[PFUser currentUser]];
+    
+    PFQuery *servicosQuery = [PFQuery queryWithClassName:@"Servico"];
+    
+    NSArray *servicos = [servicosQuery findObjects];
+    NSArray *propostas = [propostasQuery findObjects];
+
+    
+    
+    NSMutableArray *servicosSelect = [@[] mutableCopy];
+    
+    for (PFObject *objectServico in servicos) {
+        
+       
+        for (PFObject *objectProposta in propostas) {
+            
+            if ([objectServico isEqual:[objectProposta objectForKey:@"servico"]]) {
+            
+                [servicosSelect addObject:objectServico];
+                
+            }
+        }
+        
+    }
+    
+    return  servicosSelect;
+}
+
+- (BOOL)buscaServico:(PFObject *)servico{
+    
+    return YES;
+
+}
+
++ (NSArray *)BuscaServicosComoCliente{
+    
+    PFQuery *servicos = [PFQuery queryWithClassName:@"Servico"];
+
+    [servicos whereKey:@"User" equalTo:[PFUser currentUser]];
+    
+    return  servicos.findObjects;
+
+}
+
+- (void)buscaImageWithServico: (NSDictionary *)servico andWithIndex: (NSInteger)index andWithSize: (CGSize)size completion:(myImge) compblock{
+    //Query image Parse
+    
+    PFFile *userImageFile = servico[[NSString stringWithFormat:@"image%ld", index]];
+    [userImageFile getDataInBackgroundWithBlock:^(NSData *imageData, NSError *error) {
+        if (!error) {
+            NSLog(@"\n\n\nsucedido image%ld",index);
+            
+            CGRect rect = CGRectMake(0,0,size.width,size.height);
+            UIGraphicsBeginImageContext( rect.size );
+            [[UIImage imageWithData:imageData] drawInRect:rect];
+            UIImage *picture1 = UIGraphicsGetImageFromCurrentImageContext();
+            UIGraphicsEndImageContext();
+            
+            NSData *imageData = UIImagePNGRepresentation(picture1);
+            UIImage *img=[UIImage imageWithData:imageData];
+            
+            compblock(img);
+            
+            
+        }else{
+        
+            NSLog(@"\n\n\nerro image%ld",index);
+
+        }
+    }];
+}
+
+
 
 
 + (NSString *)alvenaria{
