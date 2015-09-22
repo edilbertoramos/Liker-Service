@@ -456,15 +456,6 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0so-se-rhF">
                                         <rect key="frame" x="0.0" y="0.0" width="540" height="90"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uhg-cY-WOu">
-                                                <rect key="frame" x="189" y="7" width="72" height="76"/>
-                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                                <state key="normal" image="Pint-select"/>
-                                                <connections>
-                                                    <action selector="pinturaButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Z8T-8A-LL7"/>
-                                                    <action selector="pinturaButtonPressed:" destination="fOk-ib-PfD" eventType="touchUpInside" id="rUQ-hP-YUy"/>
-                                                </connections>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkq-V1-Xhv">
                                                 <rect key="frame" x="279" y="7" width="72" height="76"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -507,6 +498,15 @@
                                                 <connections>
                                                     <action selector="eletricaButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="94r-ta-NNm"/>
                                                     <action selector="eletricaButtonPressed:" destination="fOk-ib-PfD" eventType="touchUpInside" id="ybD-a2-QAb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uhg-cY-WOu">
+                                                <rect key="frame" x="189" y="7" width="72" height="76"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" image="Pint-select"/>
+                                                <connections>
+                                                    <action selector="pinturaButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Z8T-8A-LL7"/>
+                                                    <action selector="pinturaButtonPressed:" destination="fOk-ib-PfD" eventType="touchUpInside" id="rUQ-hP-YUy"/>
                                                 </connections>
                                             </button>
                                         </subviews>
