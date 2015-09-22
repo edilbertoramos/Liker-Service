@@ -53,7 +53,6 @@
     [[UITabBar appearance] setTintColor: [UIColor whiteColor]];
     [[UITabBar appearance] setTranslucent:NO];
     [[UINavigationBar appearance] setTranslucent:NO];
-   // [UIColor colorWithRed:1 green:0.831 blue:0.29 alpha:1] /*#ffd44a*/
     return [[FBSDKApplicationDelegate sharedInstance] application:application
                                     didFinishLaunchingWithOptions:launchOptions];
 }

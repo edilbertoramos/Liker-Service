@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface SEVServicosDisponiveisTableViewCell : UITableViewCell
+
 @property (strong, nonatomic) IBOutlet UILabel *labelPrincipal;
 @property (strong, nonatomic) IBOutlet UILabel *labelSecundario;
+@property (weak, nonatomic) IBOutlet UIView *viewCell;
 
 @end
