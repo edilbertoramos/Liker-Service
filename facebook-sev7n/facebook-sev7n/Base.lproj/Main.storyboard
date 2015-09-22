@@ -508,6 +508,34 @@
                                                     <action selector="pinturaButtonPressed:" destination="fOk-ib-PfD" eventType="touchUpInside" id="rUQ-hP-YUy"/>
                                                 </connections>
                                             </button>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2i1-D7-a2G">
+                                                <rect key="frame" x="92" y="8" width="1" height="76"/>
+                                                <color key="backgroundColor" red="1" green="0.83137254901960778" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NCe-o0-geo">
+                                                <rect key="frame" x="182" y="8" width="1" height="76"/>
+                                                <color key="backgroundColor" red="1" green="0.83137254900000002" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QGk-g0-QVI">
+                                                <rect key="frame" x="269" y="7" width="1" height="76"/>
+                                                <color key="backgroundColor" red="1" green="0.83137254900000002" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pB8-u4-E6T">
+                                                <rect key="frame" x="362" y="8" width="1" height="76"/>
+                                                <color key="backgroundColor" red="1" green="0.83137254900000002" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Af4-64-l8L">
+                                                <rect key="frame" x="452" y="8" width="1" height="76"/>
+                                                <color key="backgroundColor" red="1" green="0.83137254900000002" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sRp-KD-aop">
+                                                <rect key="frame" x="532" y="8" width="1" height="76"/>
+                                                <color key="backgroundColor" red="1" green="0.83137254900000002" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w6I-gy-fdY">
+                                                <rect key="frame" x="2" y="8" width="1" height="76"/>
+                                                <color key="backgroundColor" red="1" green="0.83137254900000002" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
