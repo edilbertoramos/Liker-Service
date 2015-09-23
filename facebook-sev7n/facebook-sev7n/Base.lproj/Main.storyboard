@@ -488,17 +488,6 @@
                                     <constraint firstItem="0so-se-rhF" firstAttribute="leading" secondItem="ard-E8-6u2" secondAttribute="leading" id="Xpf-ZC-TNE"/>
                                 </constraints>
                             </scrollView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Nk-xs-oOT">
-                                <rect key="frame" x="15" y="77" width="284" height="30"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thE-BC-tH0">
-                                <rect key="frame" x="316" y="77" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHk-I1-lf7" userLabel="ButtonProfile">
                                 <rect key="frame" x="277" y="566" width="112" height="108"/>
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
@@ -599,23 +588,27 @@
                                     <outlet property="delegate" destination="fOk-ib-PfD" id="sZS-WF-djj"/>
                                 </connections>
                             </tableView>
+                            <searchBar contentMode="redraw" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zMg-sK-NlC">
+                                <rect key="frame" x="0.0" y="76" width="375" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="bottomMargin" secondItem="HHk-I1-lf7" secondAttribute="bottom" constant="-7" id="0LC-s9-ue6"/>
-                            <constraint firstItem="thE-BC-tH0" firstAttribute="top" secondItem="9Nk-xs-oOT" secondAttribute="top" id="7tV-mG-Y1h"/>
                             <constraint firstItem="ard-E8-6u2" firstAttribute="leading" secondItem="xik-1I-Qms" secondAttribute="leadingMargin" constant="-20" id="9kb-7L-4VN"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="9Nk-xs-oOT" secondAttribute="trailing" constant="56" id="Bxn-f9-HFv"/>
-                            <constraint firstItem="ard-E8-6u2" firstAttribute="top" secondItem="9Nk-xs-oOT" secondAttribute="bottom" constant="13" id="Cuy-cG-iaB"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4iC-Da-tFc" secondAttribute="trailing" constant="-20" id="Ocx-rP-5nk"/>
+                            <constraint firstItem="zMg-sK-NlC" firstAttribute="top" secondItem="24k-Tf-Rj9" secondAttribute="bottom" constant="12" id="PBx-ke-tzM"/>
                             <constraint firstItem="ard-E8-6u2" firstAttribute="top" secondItem="24k-Tf-Rj9" secondAttribute="bottom" constant="56" id="Rki-zr-5mS"/>
                             <constraint firstAttribute="trailingMargin" secondItem="HHk-I1-lf7" secondAttribute="trailing" constant="-30" id="SaV-zk-Was"/>
-                            <constraint firstItem="9Nk-xs-oOT" firstAttribute="leading" secondItem="xik-1I-Qms" secondAttribute="leadingMargin" constant="-5" id="Uc3-hs-36q"/>
+                            <constraint firstItem="zMg-sK-NlC" firstAttribute="trailing" secondItem="ard-E8-6u2" secondAttribute="trailing" id="UTh-NQ-Ii5"/>
                             <constraint firstItem="4iC-Da-tFc" firstAttribute="top" secondItem="ard-E8-6u2" secondAttribute="bottom" constant="8" id="b7D-3n-ZiF"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ard-E8-6u2" secondAttribute="trailing" constant="-20" id="cH2-rj-pRr"/>
                             <constraint firstItem="qxE-a1-l60" firstAttribute="top" secondItem="4iC-Da-tFc" secondAttribute="bottom" id="e5M-qL-UQe"/>
-                            <constraint firstItem="thE-BC-tH0" firstAttribute="leading" secondItem="9Nk-xs-oOT" secondAttribute="trailing" constant="17" id="pSh-NS-3RY"/>
+                            <constraint firstItem="zMg-sK-NlC" firstAttribute="bottom" secondItem="ard-E8-6u2" secondAttribute="top" id="hdx-PD-dTt"/>
+                            <constraint firstItem="ard-E8-6u2" firstAttribute="top" secondItem="zMg-sK-NlC" secondAttribute="bottom" id="x9N-iI-baA"/>
                             <constraint firstItem="4iC-Da-tFc" firstAttribute="leading" secondItem="xik-1I-Qms" secondAttribute="leadingMargin" constant="-20" id="xJw-nd-eF1"/>
+                            <constraint firstItem="zMg-sK-NlC" firstAttribute="leading" secondItem="ard-E8-6u2" secondAttribute="leading" id="xas-XT-mny"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Serviços disponíveis" id="Faf-rv-g7D">
@@ -634,7 +627,6 @@
                         <outlet property="btLimpeza" destination="FtH-gm-6gk" id="Syr-OE-aos"/>
                         <outlet property="btPintura" destination="Uhg-cY-WOu" id="mv2-Yd-gaL"/>
                         <outlet property="tableView" destination="4iC-Da-tFc" id="zgb-ed-Dod"/>
-                        <outlet property="textField" destination="9Nk-xs-oOT" id="84x-I5-X6O"/>
                         <segue destination="vXZ-lx-hvc" kind="show" identifier="novoMain" id="gML-2d-9FS"/>
                         <segue destination="EfA-61-gww" kind="push" identifier="DetalhesServicoDisponivel" id="TxI-Mz-eZl"/>
                     </connections>
