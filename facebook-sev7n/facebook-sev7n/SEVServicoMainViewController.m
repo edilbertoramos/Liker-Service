@@ -28,6 +28,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.textField.layer.cornerRadius = 5;
+    self.textField.layer.borderWidth = 1;
+    self.textField.layer.borderColor = [UIColor colorWithRed:1 green:0.831 blue:0.29 alpha:1].CGColor;
     
     [self queryServicesWithType:[SEVModel eletrica]];
     
