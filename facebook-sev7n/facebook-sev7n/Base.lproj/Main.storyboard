@@ -432,15 +432,6 @@
                                                     <action selector="limpezaButtonPressed:" destination="fOk-ib-PfD" eventType="touchUpInside" id="3Cz-G8-h2W"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkq-V1-Xhv">
-                                                <rect key="frame" x="76" y="6" width="36" height="38"/>
-                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                                <state key="normal" image="Hidro-select"/>
-                                                <connections>
-                                                    <action selector="hidraulicaButtonPressed:" destination="fOk-ib-PfD" eventType="touchUpInside" id="AqD-Am-YuX"/>
-                                                    <action selector="hidraulicaButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sHs-Uc-HU6"/>
-                                                </connections>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kk8-Lh-gzb">
                                                 <rect key="frame" x="141" y="6" width="36" height="38"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -457,6 +448,15 @@
                                                 <connections>
                                                     <action selector="pinturaButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Z8T-8A-LL7"/>
                                                     <action selector="pinturaButtonPressed:" destination="fOk-ib-PfD" eventType="touchUpInside" id="rUQ-hP-YUy"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkq-V1-Xhv">
+                                                <rect key="frame" x="81" y="6" width="36" height="38"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" image="Hidro-select"/>
+                                                <connections>
+                                                    <action selector="hidraulicaButtonPressed:" destination="fOk-ib-PfD" eventType="touchUpInside" id="AqD-Am-YuX"/>
+                                                    <action selector="hidraulicaButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sHs-Uc-HU6"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -626,6 +626,7 @@
                         <outlet property="btHidraulica" destination="lkq-V1-Xhv" id="rdB-ai-4yD"/>
                         <outlet property="btLimpeza" destination="FtH-gm-6gk" id="Syr-OE-aos"/>
                         <outlet property="btPintura" destination="Uhg-cY-WOu" id="mv2-Yd-gaL"/>
+                        <outlet property="searchBar" destination="zMg-sK-NlC" id="pKw-xg-qkC"/>
                         <outlet property="tableView" destination="4iC-Da-tFc" id="zgb-ed-Dod"/>
                         <segue destination="vXZ-lx-hvc" kind="show" identifier="novoMain" id="gML-2d-9FS"/>
                         <segue destination="EfA-61-gww" kind="push" identifier="DetalhesServicoDisponivel" id="TxI-Mz-eZl"/>

@@ -11,7 +11,7 @@
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 #import "SCProfilePictureButton.h"
 
-@interface SEVServicoMainViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface SEVServicoMainViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, UISearchDisplayDelegate>
 
 @property (weak, nonatomic) IBOutlet UIButton *btEletrica;
 @property (weak, nonatomic) IBOutlet UIButton *btAlvenaria;
@@ -19,7 +19,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *btHidraulica;
 @property (weak, nonatomic) IBOutlet UIButton *btLimpeza;
 @property (weak, nonatomic) IBOutlet UIButton *btChaveiro;
-@property (weak, nonatomic) IBOutlet UITextField *textField;
-
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
+@property (nonatomic, strong) UISearchDisplayController *searchController;
+@property (nonatomic, strong) NSMutableArray *searchResults;
+
 @end

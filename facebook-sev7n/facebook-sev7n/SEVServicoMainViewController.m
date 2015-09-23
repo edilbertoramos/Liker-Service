@@ -28,15 +28,33 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.textField.layer.cornerRadius = 5;
-    self.textField.layer.borderWidth = 1;
-    self.textField.layer.borderColor = [UIColor colorWithRed:1 green:0.831 blue:0.29 alpha:1].CGColor;
+//    self.textField.layer.cornerRadius = 5;
+//    self.textField.layer.borderWidth = 1;
+//    self.textField.layer.borderColor = [UIColor colorWithRed:1 green:0.831 blue:0.29 alpha:1].CGColor;
     
     [self queryServicesWithType:[SEVModel eletrica]];
+    [self search];
     
 }
 
-- (void)viewDidAppear:(BOOL)animated{
+// operações do search
+- (void)search
+{
+    self.searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 44)];
+    self.tableView.tableHeaderView = self.searchBar;
+    self.searchController = [[UISearchDisplayController alloc] initWithSearchBar:self.searchBar contentsController:self];
+    
+    self.searchController.searchResultsDataSource = self;
+    self.searchController.searchResultsDelegate = self;
+    self.searchController.delegate = self;
+    
+    CGPoint offset = CGPointMake(0, self.searchBar.frame.size.height);
+    self.tableView.contentOffset = offset;
+    self.searchResults = [NSMutableArray array];
+    
+}
+
+- (void)viewDidAppear:(BOOL)animated {
 
     [self queryServicesWithType:[SEVModel servicoSelecionado]];
 
