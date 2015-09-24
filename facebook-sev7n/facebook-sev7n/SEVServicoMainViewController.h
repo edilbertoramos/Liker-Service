@@ -19,8 +19,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *btHidraulica;
 @property (weak, nonatomic) IBOutlet UIButton *btLimpeza;
 @property (weak, nonatomic) IBOutlet UIButton *btChaveiro;
-@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
-@property (nonatomic, strong) UISearchDisplayController *searchController;
-@property (nonatomic, strong) NSMutableArray *searchResults;
+
 
 @end
