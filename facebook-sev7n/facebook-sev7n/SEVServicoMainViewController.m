@@ -140,6 +140,7 @@
     }
 }
 
+#pragma table view methods
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // se o search bar obtiver resultados, somente será mostrado o vetor
@@ -157,12 +158,21 @@
 
 - (UITableViewCell *)tableView:(UITableView *) tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
     SEVServicosDisponiveisTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
     
-    if (tableView == self.tableView) {
+    if (tableView == self.tableView)
+    {
         cell.labelPrincipal.text  = [servicos[indexPath.row] objectForKey:@"descricao"];
         cell.labelSecundario.text  = [servicos[indexPath.row] objectForKey:@"detalhe"];
+    }
+    
+    if (tableView == self.searchDisplayController.searchResultsTableView)
+    {
+        cell.textLabel.text = [searchResults objectAtIndex:indexPath.row];
+    }
+    else
+    {
+        cell.textLabel.text = [servicos objectAtIndex:indexPath.row];
     }
     
     return cell;
@@ -185,6 +195,13 @@
     
     [self performSegueWithIdentifier:@"DetalhesServicoDisponivel" sender:self];
     
+    
+}
+
+#pragma search methods
+
+- (void) filterContentForSearchText: (NSString *)searchText scope:(NSString *)scope
+{
     
 }
 
