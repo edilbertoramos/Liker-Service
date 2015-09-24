@@ -16,6 +16,7 @@
 {
     NSArray *servicos;
     NSString *servicoSelecionado;
+    NSArray *searchResults;
 }
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
@@ -33,6 +34,7 @@
 {
     [super viewDidLoad];
     [self queryServicesWithType:[SEVModel eletrica]];
+    searchResults = [[NSArray alloc] init];
    
     
 }
@@ -138,9 +140,19 @@
     }
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return servicos.count;
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    // se o search bar obtiver resultados, somente será mostrado o vetor
+    if (tableView == self.searchDisplayController.searchResultsTableView)
+    {
+        return searchResults.count;
     }
+    // senão, apenas os objetos
+    else
+    {
+        return servicos.count;
+    }
+}
 
 
 - (UITableViewCell *)tableView:(UITableView *) tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
