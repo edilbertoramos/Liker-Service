@@ -12,36 +12,30 @@
 #import "SEVServicosDisponiveisTableViewCell.h"
 #import "SEVDetalhesServicoDisponivelTableViewController.h"
 
-@interface SEVServicoMainViewController () <UISearchControllerDelegate>{
+@interface SEVServicoMainViewController () <UISearchControllerDelegate>
+{
     NSArray *servicos;
-//    NSMutableArray *searchResults;
     NSString *servicoSelecionado;
-
 }
+
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
 @implementation SEVServicoMainViewController
-- (IBAction)profileButtonPressed:(id)sender {
+
+- (IBAction)profileButtonPressed:(id)sender
+{
+    
 }
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-//    self.searchBar.layer.cornerRadius = 50;
-//    self.searchBar.layer.borderWidth = 1;
-//    self.searchBar.layer.borderColor = [UIColor colorWithRed:1 green:0.831 blue:0.29 alpha:1].CGColor;
-    
     [self queryServicesWithType:[SEVModel eletrica]];
    
     
 }
-
-
-
-
-
 
 - (void)viewDidAppear:(BOOL)animated {
 
