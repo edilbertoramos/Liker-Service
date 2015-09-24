@@ -141,6 +141,7 @@
 }
 
 #pragma table view methods
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // se o search bar obtiver resultados, somente será mostrado o vetor
@@ -168,11 +169,11 @@
     
     if (tableView == self.searchDisplayController.searchResultsTableView)
     {
-        cell.textLabel.text = [searchResults objectAtIndex:indexPath.row];
+        cell.labelPrincipal.text = [searchResults objectAtIndex:indexPath.row];
     }
     else
     {
-        cell.textLabel.text = [servicos objectAtIndex:indexPath.row];
+        cell.labelSecundario.text = [servicos objectAtIndex:indexPath.row];
     }
     
     return cell;
@@ -181,17 +182,17 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
   
     //Salva proposta
-    /*
-    SEVModel *model = [[SEVModel alloc] init];
-
-    [model salvaPropostaNoServico:servicos[indexPath.row] completion:^(BOOL finished) {
-        
-        NSLog(finished ? @"Yes" : @"No");
-        if (finished ? @"Yes" : @"No"){
-            printf("Proposta bem sucedida");
-        }
-    }];
-    */
+    
+//    SEVModel *model = [[SEVModel alloc] init];
+//
+//    [model salvaPropostaNoServico:servicos[indexPath.row] completion:^(BOOL finished) {
+//        
+//        NSLog(finished ? @"Yes" : @"No");
+//        if (finished ? @"Yes" : @"No"){
+//            printf("Proposta bem sucedida");
+//        }
+//    }];
+//    
     
     [self performSegueWithIdentifier:@"DetalhesServicoDisponivel" sender:self];
     
@@ -202,7 +203,18 @@
 
 - (void) filterContentForSearchText: (NSString *)searchText scope:(NSString *)scope
 {
+    // ache todas as palavras que comece com a letra informada
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF beginswith[c] %@", searchText];
     
+    // filtrar o array de serviços
+    searchResults = [servicos filteredArrayUsingPredicate:predicate];
+}
+
+- (BOOL) searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
+{
+    [self filterContentForSearchText:searchString scope:[[self.searchDisplayController.searchBar scopeButtonTitles] objectAtIndex:[self.searchDisplayController.searchBar selectedScopeButtonIndex]]];
+    
+    return YES;
 }
 
 #pragma mark - Navigation
