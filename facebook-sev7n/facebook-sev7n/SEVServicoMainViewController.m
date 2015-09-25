@@ -12,7 +12,7 @@
 #import "SEVServicosDisponiveisTableViewCell.h"
 #import "SEVDetalhesServicoDisponivelTableViewController.h"
 
-@interface SEVServicoMainViewController () <UISearchControllerDelegate>
+@interface SEVServicoMainViewController () <UISearchControllerDelegate, UIGestureRecognizerDelegate>
 {
     NSArray *servicos;
     NSString *servicoSelecionado;
@@ -35,7 +35,18 @@
     [super viewDidLoad];
     [self queryServicesWithType:[SEVModel eletrica]];
     searchResults = [[NSArray alloc] init];
-   
+    
+    UISwipeGestureRecognizer *swipeRightToLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(myMethod)];
+    [swipeRightToLeft setDirection:UISwipeGestureRecognizerDirectionRight];
+    [swipeRightToLeft setDelegate:self];
+    [self.profileButton addGestureRecognizer:swipeRightToLeft];
+
+}
+
+- (void)myMethod
+{
+
+    NSLog(@"\n\nswipe");
     
 }
 
@@ -255,9 +266,6 @@
         destination.dictionary = servicos[indexPath.row];
         
     }
-
-
-    
 }
 
 

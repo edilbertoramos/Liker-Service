@@ -627,8 +627,11 @@
                         <outlet property="btHidraulica" destination="lkq-V1-Xhv" id="rdB-ai-4yD"/>
                         <outlet property="btLimpeza" destination="FtH-gm-6gk" id="Syr-OE-aos"/>
                         <outlet property="btPintura" destination="Uhg-cY-WOu" id="mv2-Yd-gaL"/>
+                        <outlet property="profileButton" destination="HHk-I1-lf7" id="dtj-rN-W7L"/>
                         <outlet property="searchDisplayController" destination="sgI-mZ-w7q" id="ckM-6Q-hZa"/>
                         <outlet property="tableView" destination="4iC-Da-tFc" id="zgb-ed-Dod"/>
+                        <outlet property="view" destination="xik-1I-Qms" id="3F5-B9-fAj"/>
+                        <outlet property="viewSwip" destination="xik-1I-Qms" id="jKn-qO-syK"/>
                         <segue destination="vXZ-lx-hvc" kind="show" identifier="novoMain" id="gML-2d-9FS"/>
                         <segue destination="EfA-61-gww" kind="push" identifier="DetalhesServicoDisponivel" id="TxI-Mz-eZl"/>
                     </connections>
