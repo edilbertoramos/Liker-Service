@@ -147,11 +147,14 @@
     // se o search bar obtiver resultados, somente será mostrado o vetor
     if (tableView == self.searchDisplayController.searchResultsTableView)
     {
+        NSLog(@"\n1: %ld", searchResults.count);
         return searchResults.count;
     }
     // senão, apenas os objetos
     else
     {
+        NSLog(@"\n2: %ld", servicos.count);
+
         return servicos.count;
     }
 }
@@ -169,11 +172,15 @@
     
     if (tableView == self.searchDisplayController.searchResultsTableView)
     {
-        cell.labelPrincipal.text = [searchResults objectAtIndex:indexPath.row];
+        UITableViewCell *cell1 = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+
+//        cell.labelPrincipal.text  = [searchResults[indexPath.row] objectForKey:@"descricao"];
+        cell1.textLabel.text = [searchResults[indexPath.row] objectForKey:@"descricao"];
+        return cell1;
     }
     else
     {
-        cell.labelSecundario.text = [servicos objectAtIndex:indexPath.row];
+        cell.labelPrincipal.text  = [servicos[indexPath.row] objectForKey:@"descricao"];
     }
     
     return cell;
@@ -204,15 +211,31 @@
 - (void) filterContentForSearchText: (NSString *)searchText scope:(NSString *)scope
 {
     // ache todas as palavras que comece com a letra informada
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF beginswith[c] %@", searchText];
     
     // filtrar o array de serviços
-    searchResults = [servicos filteredArrayUsingPredicate:predicate];
+    NSMutableArray *t = [@[] mutableCopy];
+    for (NSDictionary *dic in servicos) {
+        [t addObject:[dic objectForKey:@"descricao"]];
+    }
+    NSLog(@"\n\n\n%@", t);
+//    NSString* filter = @"%K CONTAINS %@";
+//    NSPredicate* predicate = [NSPredicate predicateWithFormat:filter, @"SELF", "I"];
+
+    NSArray* data = @[@"Grapes", @"Apples", @"Oranges"];
+    NSString* filter = @"%K CONTAINS %@";
+    NSPredicate* predicate = [NSPredicate predicateWithFormat:filter, @"SELF", @"a"];
+    NSArray* filteredData = [data filteredArrayUsingPredicate:predicate];
+
+    NSLog(@"\n\n\n---%ld", filteredData.count);
+
+//    searchResults = [t filteredArrayUsingPredicate:predicate];
+
 }
 
 - (BOOL) searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
 {
-    [self filterContentForSearchText:searchString scope:[[self.searchDisplayController.searchBar scopeButtonTitles] objectAtIndex:[self.searchDisplayController.searchBar selectedScopeButtonIndex]]];
+    NSLog(@"\n\nFiltro: %@", searchString);
+    //[self filterContentForSearchText:searchString scope:[[self.searchDisplayController.searchBar scopeButtonTitles] objectAtIndex:[self.searchDisplayController.searchBar selectedScopeButtonIndex]]];
     
     return YES;
 }
