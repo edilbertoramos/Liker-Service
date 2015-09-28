@@ -11,7 +11,7 @@
 #import <Parse/Parse.h>
 #import "SEVServicosDisponiveisTableViewCell.h"
 #import "SEVDetalhesServicoDisponivelTableViewController.h"
-
+#import "SEVMenuProfileViewController.h"
 @interface SEVServicoMainViewController () <UISearchControllerDelegate, UIGestureRecognizerDelegate>
 {
     NSArray *servicos;
@@ -37,27 +37,38 @@
     [self queryServicesWithType:[SEVModel eletrica]];
     searchResults = [[NSArray alloc] init];
     
-    UISwipeGestureRecognizer * swipeleft=[[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swipeleft:)];
+    UISwipeGestureRecognizer * swipeleft=[[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swipeLeft:)];
     swipeleft.direction=UISwipeGestureRecognizerDirectionLeft;
     [self.profileButton addGestureRecognizer:swipeleft];
     
-    UISwipeGestureRecognizer * swipeUp=[[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swipeup:)];
+    UISwipeGestureRecognizer * swipeUp=[[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swipeUp:)];
     swipeUp.direction=UISwipeGestureRecognizerDirectionUp;
     [self.profileButton addGestureRecognizer:swipeUp];
     
     
 }
 
--(void)swipeleft:(UISwipeGestureRecognizer*)gestureRecognizer
+-(void)swipeLeft:(UISwipeGestureRecognizer*)gestureRecognizer
 {
     NSLog(@"\n\nLeft");
+    [self showMenu];
+   // [self performSegueWithIdentifier:@"menu" sender:self];
 }
 
 
--(void)swipeup:(UISwipeGestureRecognizer*)gestureRecognizer
+-(void)swipeUp:(UISwipeGestureRecognizer*)gestureRecognizer
 {
     NSLog(@"\n\nUp");
-    
+    [self showMenu];
+//    [self performSegueWithIdentifier:@"menu" sender:self];
+
+}
+
+- (void)showMenu
+{
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    SEVMenuProfileViewController *viewController = (SEVMenuProfileViewController *)[storyboard instantiateViewControllerWithIdentifier:@"Menu"];
+    [self presentViewController:viewController animated:YES completion:nil];
 }
 
 - (void)viewDidAppear:(BOOL)animated {

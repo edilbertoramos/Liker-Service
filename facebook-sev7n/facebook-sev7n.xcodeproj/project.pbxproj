@@ -45,7 +45,7 @@
 		77ACB1321B55E53E0032A82E /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77ACB12F1B55E53E0032A82E /* FBSDKLoginKit.framework */; };
 		77ACB1331B55E53E0032A82E /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77ACB1301B55E53E0032A82E /* FBSDKShareKit.framework */; };
 		77B9BA691B6A4D8F00DF7517 /* SEVPerfilNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B9BA681B6A4D8F00DF7517 /* SEVPerfilNavigationController.m */; };
-		79DA46841BB5A3A10074FA8D /* SwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 79DA46831BB5A3A10074FA8D /* SwipeButton.m */; settings = {ASSET_TAGS = (); }; };
+		79DA46871BB969C70074FA8D /* SEVMenuProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79DA46861BB969C70074FA8D /* SEVMenuProfileViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,8 +117,8 @@
 		77ACB1301B55E53E0032A82E /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../FBSDKShareKit.framework; sourceTree = "<group>"; };
 		77B9BA671B6A4D8F00DF7517 /* SEVPerfilNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEVPerfilNavigationController.h; sourceTree = "<group>"; };
 		77B9BA681B6A4D8F00DF7517 /* SEVPerfilNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEVPerfilNavigationController.m; sourceTree = "<group>"; };
-		79DA46821BB5A3A10074FA8D /* SwipeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeButton.h; sourceTree = "<group>"; };
-		79DA46831BB5A3A10074FA8D /* SwipeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeButton.m; sourceTree = "<group>"; };
+		79DA46851BB969C70074FA8D /* SEVMenuProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEVMenuProfileViewController.h; sourceTree = "<group>"; };
+		79DA46861BB969C70074FA8D /* SEVMenuProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEVMenuProfileViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +195,8 @@
 				77135A621B592BF700E23BB4 /* SCProfilePictureButton.m */,
 				77653D2D1B59F54A005D6BAC /* SEVLogoutViewController.h */,
 				77653D2E1B59F54A005D6BAC /* SEVLogoutViewController.m */,
+				79DA46851BB969C70074FA8D /* SEVMenuProfileViewController.h */,
+				79DA46861BB969C70074FA8D /* SEVMenuProfileViewController.m */,
 			);
 			name = User;
 			sourceTree = "<group>";
@@ -258,8 +260,6 @@
 			isa = PBXGroup;
 			children = (
 				776035CE1B552ECD009C7C9F /* Main.storyboard */,
-				79DA46821BB5A3A10074FA8D /* SwipeButton.h */,
-				79DA46831BB5A3A10074FA8D /* SwipeButton.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -455,13 +455,13 @@
 				776035CD1B552ECD009C7C9F /* SEVNovoMainViewController.m in Sources */,
 				774D62781B6917A000762FF4 /* SEVNovoDetalhesTableViewController.m in Sources */,
 				77B9BA691B6A4D8F00DF7517 /* SEVPerfilNavigationController.m in Sources */,
-				79DA46841BB5A3A10074FA8D /* SwipeButton.m in Sources */,
 				77653D2C1B59F3B0005D6BAC /* SEVLoginViewController.m in Sources */,
 				777EB9501B6BC4C70027292B /* SEVServicosDisponiveisTableViewCell.m in Sources */,
 				774C33001B66B2F100BDA5BE /* SEVServicoMainViewController.m in Sources */,
 				7773F0821B6AD37700A64113 /* SEVModel.m in Sources */,
 				774D62751B6901AA00762FF4 /* SEVServicoNavigationController.m in Sources */,
 				24117AA81B8771D300905742 /* SEVPageImageViewController.m in Sources */,
+				79DA46871BB969C70074FA8D /* SEVMenuProfileViewController.m in Sources */,
 				776035CA1B552ECD009C7C9F /* facebook_sev7n.xcdatamodeld in Sources */,
 				777199351B67D14F00AFBD44 /* SEVMainTabBarController.m in Sources */,
 				7773F0851B6B187700A64113 /* MBProgressHUD.m in Sources */,
