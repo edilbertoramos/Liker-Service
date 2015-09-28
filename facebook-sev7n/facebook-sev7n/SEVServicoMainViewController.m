@@ -17,6 +17,7 @@
     NSArray *servicos;
     NSString *servicoSelecionado;
     NSArray *searchResults;
+    
 }
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
@@ -36,18 +37,25 @@
     [self queryServicesWithType:[SEVModel eletrica]];
     searchResults = [[NSArray alloc] init];
     
-    UISwipeGestureRecognizer *swipeRightToLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(myMethod)];
-    [swipeRightToLeft setDirection:UISwipeGestureRecognizerDirectionRight];
-    [swipeRightToLeft setDelegate:self];
-    [self.profileButton addGestureRecognizer:swipeRightToLeft];
-
+    UISwipeGestureRecognizer * swipeleft=[[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swipeleft:)];
+    swipeleft.direction=UISwipeGestureRecognizerDirectionLeft;
+    [self.view addGestureRecognizer:swipeleft];
+    
+    UISwipeGestureRecognizer * swiperight=[[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swiperight:)];
+    swiperight.direction=UISwipeGestureRecognizerDirectionRight;
+    [self.view addGestureRecognizer:swiperight];
+    
 }
 
-- (void)myMethod
+-(void)swipeleft:(UISwipeGestureRecognizer*)gestureRecognizer
 {
+    NSLog(@"\n\nLeft");
+}
 
-    NSLog(@"\n\nswipe");
-    
+-(void)swiperight:(UISwipeGestureRecognizer*)gestureRecognizer
+{
+    NSLog(@"\n\nRight");
+
 }
 
 - (void)viewDidAppear:(BOOL)animated {
