@@ -39,11 +39,12 @@
     
     UISwipeGestureRecognizer * swipeleft=[[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swipeleft:)];
     swipeleft.direction=UISwipeGestureRecognizerDirectionLeft;
-    [self.view addGestureRecognizer:swipeleft];
+    [self.profileButton addGestureRecognizer:swipeleft];
     
-    UISwipeGestureRecognizer * swiperight=[[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swiperight:)];
-    swiperight.direction=UISwipeGestureRecognizerDirectionRight;
-    [self.view addGestureRecognizer:swiperight];
+    UISwipeGestureRecognizer * swipeUp=[[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swipeup:)];
+    swipeUp.direction=UISwipeGestureRecognizerDirectionUp;
+    [self.profileButton addGestureRecognizer:swipeUp];
+    
     
 }
 
@@ -52,10 +53,11 @@
     NSLog(@"\n\nLeft");
 }
 
--(void)swiperight:(UISwipeGestureRecognizer*)gestureRecognizer
-{
-    NSLog(@"\n\nRight");
 
+-(void)swipeup:(UISwipeGestureRecognizer*)gestureRecognizer
+{
+    NSLog(@"\n\nUp");
+    
 }
 
 - (void)viewDidAppear:(BOOL)animated {
