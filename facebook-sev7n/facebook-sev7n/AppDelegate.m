@@ -14,7 +14,7 @@
 #import "SEVPerfilNavigationController.h"
 #import <Parse/Parse.h>
 #import <ParseFacebookUtilsV4/PFFacebookUtils.h>
-
+#import "SEVMenuProfileViewController.h"
 
 @interface AppDelegate ()
 
@@ -53,6 +53,21 @@
     [[UITabBar appearance] setTintColor: [UIColor whiteColor]];
     [[UITabBar appearance] setTranslucent:NO];
     [[UINavigationBar appearance] setTranslucent:NO];
+
+//    UIView *myView = [[UIView alloc] initWithFrame:CGRectMake(40, 130, 240, 232)];
+//
+//    
+//    UIButton *buttonSwipe=[UIButton buttonWithType:UIButtonTypeRoundedRect];
+//    buttonSwipe.frame= CGRectMake(200, 15, 15, 15);
+//    [buttonSwipe setTitle:@"Ok" forState:UIControlStateNormal];
+//    [buttonSwipe addTarget:self action:@selector(buttonAction) forControlEvents:UIControlEventTouchUpInside];
+//    //buttonSwipe.imageView.image = [UIImage imageNamed:@"icon_perfil"];
+//    
+//    [myView addSubview:buttonSwipe];
+//    [myView setTag:111];
+//    
+//    [[UIView appearance] addSubview:myView];
+    
     return [[FBSDKApplicationDelegate sharedInstance] application:application
                                     didFinishLaunchingWithOptions:launchOptions];
 }
