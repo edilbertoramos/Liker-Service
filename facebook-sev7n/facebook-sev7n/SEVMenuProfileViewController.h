@@ -11,5 +11,6 @@
 @interface SEVMenuProfileViewController : UIViewController
 
 + (UIColor *) SEVYellowColor;
+@property (weak, nonatomic) IBOutlet UINavigationBar *nav;
 
 @end

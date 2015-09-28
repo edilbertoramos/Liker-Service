@@ -7,7 +7,7 @@
 //
 
 #import "SEVMenuProfileViewController.h"
-
+#import "SEVServicoMainViewController.h"
 @interface SEVMenuProfileViewController ()
 
 @end
@@ -17,8 +17,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    self.nav.layer.borderWidth = 1;
+    self.nav.layer.borderColor = [UIColor redColor].CGColor;
     self.view.backgroundColor = [SEVMenuProfileViewController SEVYellowColor];
+    UISwipeGestureRecognizer * swipedown=[[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swipeDown:)];
+    swipedown.direction=UISwipeGestureRecognizerDirectionDown;
+    [self.view addGestureRecognizer:swipedown];
+}
+- (void)swipeDown:(UISwipeGestureRecognizer*)gestureRecognizer{
+    NSLog(@"\n\ntetetetete");
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 + (UIColor *) SEVYellowColor

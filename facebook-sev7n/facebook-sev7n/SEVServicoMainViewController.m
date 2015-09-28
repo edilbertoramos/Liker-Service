@@ -45,14 +45,14 @@
     swipeUp.direction=UISwipeGestureRecognizerDirectionUp;
     [self.profileButton addGestureRecognizer:swipeUp];
     
-    
+    self.navigationController.navigationBar.layer.borderWidth = 1;
+    self.navigationController.navigationBar.layer.borderColor = [SEVMenuProfileViewController SEVYellowColor].CGColor;
 }
 
 -(void)swipeLeft:(UISwipeGestureRecognizer*)gestureRecognizer
 {
     NSLog(@"\n\nLeft");
     [self showMenu];
-   // [self performSegueWithIdentifier:@"menu" sender:self];
 }
 
 
@@ -60,15 +60,15 @@
 {
     NSLog(@"\n\nUp");
     [self showMenu];
-//    [self performSegueWithIdentifier:@"menu" sender:self];
-
 }
 
 - (void)showMenu
 {
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    SEVMenuProfileViewController *viewController = (SEVMenuProfileViewController *)[storyboard instantiateViewControllerWithIdentifier:@"Menu"];
-    [self presentViewController:viewController animated:YES completion:nil];
+    [self performSegueWithIdentifier:@"menu" sender:self];
+
+//    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//    SEVMenuProfileViewController *viewController = (SEVMenuProfileViewController *)[storyboard instantiateViewControllerWithIdentifier:@"Menu"];
+//    [self presentViewController:viewController animated:YES completion:nil];
 }
 
 - (void)viewDidAppear:(BOOL)animated {

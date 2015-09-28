@@ -40,6 +40,7 @@
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
     [[UINavigationBar appearance] setBarTintColor:[UIColor blackColor]];
+   
     NSShadow *shadow = [[NSShadow alloc] init];
     shadow.shadowColor = [UIColor blackColor];
     shadow.shadowOffset = CGSizeMake(1, 0);
@@ -48,11 +49,13 @@
                                           NSShadowAttributeName:shadow};
     
     [[UINavigationBar appearance] setTitleTextAttributes:titleTextAttributes];
+    [[UINavigationBar appearance] setTranslucent:NO];
+
     [[UITableView appearance] setBackgroundColor: [UIColor blackColor]];
+    
     [[UITabBar appearance] setBarTintColor: [UIColor blackColor]];
     [[UITabBar appearance] setTintColor: [UIColor whiteColor]];
     [[UITabBar appearance] setTranslucent:NO];
-    [[UINavigationBar appearance] setTranslucent:NO];
 
 //    UIView *myView = [[UIView alloc] initWithFrame:CGRectMake(40, 130, 240, 232)];
 //
