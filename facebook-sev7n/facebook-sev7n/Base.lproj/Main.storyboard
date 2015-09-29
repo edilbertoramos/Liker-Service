@@ -429,24 +429,34 @@
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                 <state key="normal" image="icon_perfil"/>
                             </button>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gK6-tg-oza">
-                                <rect key="frame" x="-7" y="21" width="396" height="44"/>
-                                <items>
-                                    <navigationItem title="Title" id="3jx-xZ-XaI"/>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="bAW-kO-tUi"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="nav" destination="gK6-tg-oza" id="CR1-5q-4Yx"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UDE-87-2C1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="557.5" y="137.5"/>
+            <point key="canvasLocation" x="-141.5" y="-226.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="UFi-TG-K23">
+            <objects>
+                <viewController id="kgz-fL-Gsd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EBu-8N-B5N"/>
+                        <viewControllerLayoutGuide type="bottom" id="I9D-P3-xS4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iEO-lj-TxZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BTb-CD-Tk6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="614.5" y="-226.5"/>
         </scene>
         <!--Serviços disponíveis-->
         <scene sceneID="dEd-fK-zeL">
@@ -753,7 +763,7 @@
                         <outlet property="viewSwip" destination="xik-1I-Qms" id="jKn-qO-syK"/>
                         <segue destination="vXZ-lx-hvc" kind="show" identifier="novoMain" id="gML-2d-9FS"/>
                         <segue destination="EfA-61-gww" kind="push" identifier="DetalhesServicoDisponivel" id="TxI-Mz-eZl"/>
-                        <segue destination="LgO-XL-wx7" kind="presentation" identifier="menu" modalPresentationStyle="pageSheet" modalTransitionStyle="partialCurl" id="b20-iJ-h3y"/>
+                        <segue destination="LgO-XL-wx7" kind="presentation" identifier="menu" modalPresentationStyle="pageSheet" modalTransitionStyle="crossDissolve" id="b20-iJ-h3y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O3N-s7-ccz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -783,7 +793,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AOp-Ob-Erj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-121.5" y="583.5"/>
+            <point key="canvasLocation" x="-141.5" y="603.5"/>
         </scene>
         <!--Serviços-->
         <scene sceneID="Zcv-On-zG9">
