@@ -61,7 +61,7 @@
 
 #pragma parse
 
-- (void) RegisterParse
+- (void) registerParse
 {
     PFUser *user = [PFUser currentUser]; // criando user
     
@@ -91,6 +91,15 @@
 
 - (IBAction)saveBt:(id)sender
 {
+    if (![self.nameField.text isEqualToString:@""] && ![self.lastNameField.text isEqualToString:@""] && ![self.addressField.text isEqualToString:@""] && ![self.referenceField.text isEqualToString:@""] && ![self.phoneField.text isEqualToString:@""] && ![self.cellPhoneField.text isEqualToString:@""])
+    {
+        [self registerParse];
+    }
     
+    else
+    {
+        NSLog(@"Nothing!");
+    }
 }
+
 @end
