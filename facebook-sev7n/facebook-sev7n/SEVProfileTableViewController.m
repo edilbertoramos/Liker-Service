@@ -65,6 +65,10 @@
 {
     PFUser *user = [PFUser currentUser]; // criando user
     
+    // propriedade para salvar a imagem no Parse
+    NSData *imageData = UIImageJPEGRepresentation(_imageView.image, 1.0);
+    PFFile *imageFile = [PFFile fileWithName:@"" data:imageData];
+    
     // salvando nas colunas do Parse
     user[@"nome"] = self.nameField.text;
     user[@"sobrenome"] = self.lastNameField.text;
@@ -72,6 +76,7 @@
     user[@"referencia"] = self.referenceField.text;
     user[@"telefone"] = self.phoneField.text;
     user[@"celular"] = self.cellPhoneField.text;
+    [user setObject:imageFile forKey:@""]; // salvando a imagem
     
     [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (!error)
@@ -82,8 +87,6 @@
         }
         else
         {
-            NSString *errorString = [error userInfo][@"error"];   // Show the errorString somewhere and let the user try again.
-            
             UIAlertController *alert = [SEVAlertViewController styleSimpleWithTitle:@"Erro!" andWithMessage:@"Cheque sua conexão com a internet e tente de novo"];
             [self presentViewController:alert animated:YES completion:nil];
             
