@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Elet-desselect.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "Elet-desselect.png",
       "scale" : "2x"
     },
     {

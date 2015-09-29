@@ -14,7 +14,7 @@
 #import "SEVPerfilNavigationController.h"
 #import <Parse/Parse.h>
 #import <ParseFacebookUtilsV4/PFFacebookUtils.h>
-
+#import "SEVMenuProfileViewController.h"
 
 @interface AppDelegate ()
 
@@ -40,6 +40,7 @@
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
     [[UINavigationBar appearance] setBarTintColor:[UIColor blackColor]];
+   
     NSShadow *shadow = [[NSShadow alloc] init];
     shadow.shadowColor = [UIColor blackColor];
     shadow.shadowOffset = CGSizeMake(1, 0);
@@ -48,12 +49,28 @@
                                           NSShadowAttributeName:shadow};
     
     [[UINavigationBar appearance] setTitleTextAttributes:titleTextAttributes];
+    [[UINavigationBar appearance] setTranslucent:NO];
+
     [[UITableView appearance] setBackgroundColor: [UIColor blackColor]];
+    
     [[UITabBar appearance] setBarTintColor: [UIColor blackColor]];
     [[UITabBar appearance] setTintColor: [UIColor whiteColor]];
     [[UITabBar appearance] setTranslucent:NO];
-    [[UINavigationBar appearance] setTranslucent:NO];
-   // [UIColor colorWithRed:1 green:0.831 blue:0.29 alpha:1] /*#ffd44a*/
+
+//    UIView *myView = [[UIView alloc] initWithFrame:CGRectMake(40, 130, 240, 232)];
+//
+//    
+//    UIButton *buttonSwipe=[UIButton buttonWithType:UIButtonTypeRoundedRect];
+//    buttonSwipe.frame= CGRectMake(200, 15, 15, 15);
+//    [buttonSwipe setTitle:@"Ok" forState:UIControlStateNormal];
+//    [buttonSwipe addTarget:self action:@selector(buttonAction) forControlEvents:UIControlEventTouchUpInside];
+//    //buttonSwipe.imageView.image = [UIImage imageNamed:@"icon_perfil"];
+//    
+//    [myView addSubview:buttonSwipe];
+//    [myView setTag:111];
+//    
+//    [[UIView appearance] addSubview:myView];
+    
     return [[FBSDKApplicationDelegate sharedInstance] application:application
                                     didFinishLaunchingWithOptions:launchOptions];
 }

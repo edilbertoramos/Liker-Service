@@ -11,29 +11,67 @@
 #import <Parse/Parse.h>
 #import "SEVServicosDisponiveisTableViewCell.h"
 #import "SEVDetalhesServicoDisponivelTableViewController.h"
-
-@interface SEVServicoMainViewController () {
+#import "SEVMenuProfileViewController.h"
+@interface SEVServicoMainViewController () <UISearchControllerDelegate, UIGestureRecognizerDelegate>
+{
     NSArray *servicos;
     NSString *servicoSelecionado;
-
+    NSArray *searchResults;
+    
 }
+
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
 @implementation SEVServicoMainViewController
-- (IBAction)profileButtonPressed:(id)sender {
+
+- (IBAction)profileButtonPressed:(id)sender
+{
+    
 }
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
     [self queryServicesWithType:[SEVModel eletrica]];
+    searchResults = [[NSArray alloc] init];
     
+    UISwipeGestureRecognizer * swipeleft=[[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swipeLeft:)];
+    swipeleft.direction=UISwipeGestureRecognizerDirectionLeft;
+    [self.profileButton addGestureRecognizer:swipeleft];
+    
+    UISwipeGestureRecognizer * swipeUp=[[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swipeUp:)];
+    swipeUp.direction=UISwipeGestureRecognizerDirectionUp;
+    [self.profileButton addGestureRecognizer:swipeUp];
+    
+    self.navigationController.navigationBar.layer.borderWidth = 1;
+    self.navigationController.navigationBar.layer.borderColor = [SEVMenuProfileViewController SEVYellowColor].CGColor;
 }
 
-- (void)viewDidAppear:(BOOL)animated{
+-(void)swipeLeft:(UISwipeGestureRecognizer*)gestureRecognizer
+{
+    NSLog(@"\n\nLeft");
+    [self showMenu];
+}
+
+
+-(void)swipeUp:(UISwipeGestureRecognizer*)gestureRecognizer
+{
+    NSLog(@"\n\nUp");
+    [self showMenu];
+}
+
+- (void)showMenu
+{
+    [self performSegueWithIdentifier:@"menu" sender:self];
+
+//    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//    SEVMenuProfileViewController *viewController = (SEVMenuProfileViewController *)[storyboard instantiateViewControllerWithIdentifier:@"Menu"];
+//    [self presentViewController:viewController animated:YES completion:nil];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
 
     [self queryServicesWithType:[SEVModel servicoSelecionado]];
 
@@ -134,18 +172,48 @@
     }
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return servicos.count;
+#pragma table view methods
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    // se o search bar obtiver resultados, somente será mostrado o vetor
+    if (tableView == self.searchDisplayController.searchResultsTableView)
+    {
+        NSLog(@"\n1: %ld", searchResults.count);
+        return searchResults.count;
+    }
+    // senão, apenas os objetos
+    else
+    {
+        NSLog(@"\n2: %ld", servicos.count);
+
+        return servicos.count;
+    }
 }
+
 
 - (UITableViewCell *)tableView:(UITableView *) tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
     SEVServicosDisponiveisTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
     
+    if (tableView == self.tableView)
+    {
+        cell.labelPrincipal.text  = [servicos[indexPath.row] objectForKey:@"descricao"];
+        cell.labelSecundario.text  = [servicos[indexPath.row] objectForKey:@"detalhe"];
+    }
     
-    cell.labelPrincipal.text  = [servicos[indexPath.row] objectForKey:@"descricao"];
-    cell.labelSecundario.text  = [servicos[indexPath.row] objectForKey:@"detalhe"];
+    if (tableView == self.searchDisplayController.searchResultsTableView)
+    {
+        UITableViewCell *cell1 = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+
+//        cell.labelPrincipal.text  = [searchResults[indexPath.row] objectForKey:@"descricao"];
+        cell1.textLabel.text = [searchResults[indexPath.row] objectForKey:@"descricao"];
+        return cell1;
+    }
+    else
+    {
+        cell.labelPrincipal.text  = [servicos[indexPath.row] objectForKey:@"descricao"];
+    }
     
     return cell;
 }
@@ -153,21 +221,55 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
   
     //Salva proposta
-    /*
-    SEVModel *model = [[SEVModel alloc] init];
-
-    [model salvaPropostaNoServico:servicos[indexPath.row] completion:^(BOOL finished) {
-        
-        NSLog(finished ? @"Yes" : @"No");
-        if (finished ? @"Yes" : @"No"){
-            printf("Proposta bem sucedida");
-        }
-    }];
-    */
+    
+//    SEVModel *model = [[SEVModel alloc] init];
+//
+//    [model salvaPropostaNoServico:servicos[indexPath.row] completion:^(BOOL finished) {
+//        
+//        NSLog(finished ? @"Yes" : @"No");
+//        if (finished ? @"Yes" : @"No"){
+//            printf("Proposta bem sucedida");
+//        }
+//    }];
+//    
     
     [self performSegueWithIdentifier:@"DetalhesServicoDisponivel" sender:self];
     
     
+}
+
+#pragma search methods
+
+- (void) filterContentForSearchText: (NSString *)searchText scope:(NSString *)scope
+{
+    // ache todas as palavras que comece com a letra informada
+    
+    // filtrar o array de serviços
+    NSMutableArray *t = [@[] mutableCopy];
+    for (NSDictionary *dic in servicos) {
+        [t addObject:[dic objectForKey:@"descricao"]];
+    }
+    NSLog(@"\n\n\n%@", t);
+//    NSString* filter = @"%K CONTAINS %@";
+//    NSPredicate* predicate = [NSPredicate predicateWithFormat:filter, @"SELF", "I"];
+
+    NSArray* data = @[@"Grapes", @"Apples", @"Oranges"];
+    NSString* filter = @"%K CONTAINS %@";
+    NSPredicate* predicate = [NSPredicate predicateWithFormat:filter, @"SELF", @"a"];
+    NSArray* filteredData = [data filteredArrayUsingPredicate:predicate];
+
+    NSLog(@"\n\n\n---%ld", filteredData.count);
+
+//    searchResults = [t filteredArrayUsingPredicate:predicate];
+
+}
+
+- (BOOL) searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
+{
+    NSLog(@"\n\nFiltro: %@", searchString);
+    //[self filterContentForSearchText:searchString scope:[[self.searchDisplayController.searchBar scopeButtonTitles] objectAtIndex:[self.searchDisplayController.searchBar selectedScopeButtonIndex]]];
+    
+    return YES;
 }
 
 #pragma mark - Navigation
@@ -185,9 +287,6 @@
         destination.dictionary = servicos[indexPath.row];
         
     }
-
-
-    
 }
 
 
