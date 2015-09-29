@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SEVMainProfileViewController : UIViewController
+@interface SEVMainProfileViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+- (IBAction)takePhoto:(id)sender;
+
+
 
 @end

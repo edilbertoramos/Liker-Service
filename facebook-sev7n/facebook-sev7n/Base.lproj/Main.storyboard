@@ -446,7 +446,7 @@
         <!--Perfil-->
         <scene sceneID="O0n-SD-k5r">
             <objects>
-                <viewController id="aE5-pj-cbe" sceneMemberID="viewController">
+                <viewController id="aE5-pj-cbe" customClass="SEVMainProfileViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="t84-G9-TNW"/>
                         <viewControllerLayoutGuide type="bottom" id="nea-zX-Uol"/>
@@ -458,6 +458,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ffg-l9-a0n">
                                 <rect key="frame" x="164" y="185" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="takePhoto:" destination="aE5-pj-cbe" eventType="touchUpInside" id="ks2-mL-zXi"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8a-WX-yFc">
                                 <rect key="frame" x="46" y="230" width="46" height="21"/>
@@ -591,6 +594,9 @@
                         <barButtonItem key="rightBarButtonItem" title="Salvar" id="MF1-ra-bJc"/>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="imageView" destination="8nq-2D-kAa" id="5z6-RP-VaK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cy3-MV-ZCS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
