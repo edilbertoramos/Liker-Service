@@ -76,12 +76,16 @@
     [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (!error)
         {
-            NSLog(@"SAVE");
+            UIAlertController *alert = [SEVAlertViewController styleSimpleWithTitle:@"Perfil atualizado!" andWithMessage:@""];
+            [self presentViewController:alert animated:YES completion:nil];
             
         }
         else
         {
-            NSLog(@"NOT SAVE");
+            NSString *errorString = [error userInfo][@"error"];   // Show the errorString somewhere and let the user try again.
+            
+            UIAlertController *alert = [SEVAlertViewController styleSimpleWithTitle:@"Erro!" andWithMessage:@"Cheque sua conexão com a internet e tente de novo"];
+            [self presentViewController:alert animated:YES completion:nil];
             
         }
     }];
@@ -98,7 +102,8 @@
     
     else
     {
-        NSLog(@"Nothing!");
+        UIAlertController *alert = [SEVAlertViewController styleSimpleWithTitle:@"Alerta!" andWithMessage:@"Preencha todos os campos!"];
+        [self presentViewController:alert animated:YES completion:nil];
     }
 }
 

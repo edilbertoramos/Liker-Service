@@ -10,4 +10,6 @@
 
 @interface SEVAlertViewController : UIViewController
 
++ (UIAlertController *)styleSimpleWithTitle:(NSString *)title andWithMessage:(NSString *)message;
+
 @end
