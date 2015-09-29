@@ -443,7 +443,7 @@
             </objects>
             <point key="canvasLocation" x="445.5" y="-226.5"/>
         </scene>
-        <!--Profile Table View Controller-->
+        <!--Perfil-->
         <scene sceneID="7hQ-qK-I2F">
             <objects>
                 <tableViewController id="KSw-LK-9OV" customClass="SEVProfileTableViewController" sceneMemberID="viewController">
@@ -609,9 +609,22 @@
                             <outlet property="delegate" destination="KSw-LK-9OV" id="85n-8n-siS"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Perfil" id="Mn0-OV-UOn">
+                        <barButtonItem key="rightBarButtonItem" title="Salvar" id="7z3-9x-Whi">
+                            <connections>
+                                <action selector="saveBt:" destination="KSw-LK-9OV" id="2E7-id-nYf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="addressField" destination="RFk-Tl-rcQ" id="jwV-k7-Uzu"/>
+                        <outlet property="cellPhoneField" destination="XF9-Kt-AmP" id="RLi-yW-xC7"/>
                         <outlet property="imageView" destination="8nq-2D-kAa" id="1XH-9F-6Tk"/>
+                        <outlet property="lastNameField" destination="JyA-Q7-MAJ" id="4Qo-bH-Joo"/>
+                        <outlet property="nameField" destination="qd4-Fs-NB9" id="Uhv-NZ-Mb5"/>
+                        <outlet property="phoneField" destination="ebB-oD-OGl" id="jpL-tx-ECN"/>
+                        <outlet property="referenceField" destination="JU5-WX-u17" id="eh1-Uo-PNS"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pKR-ek-fyq" userLabel="First Responder" sceneMemberID="firstResponder"/>

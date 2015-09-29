@@ -7,11 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
 @interface SEVProfileTableViewController : UITableViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 - (IBAction)takePhoto:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextField *nameField;
+@property (weak, nonatomic) IBOutlet UITextField *lastNameField;
+@property (weak, nonatomic) IBOutlet UITextField *addressField;
+@property (weak, nonatomic) IBOutlet UITextField *referenceField;
+@property (weak, nonatomic) IBOutlet UITextField *phoneField;
+@property (weak, nonatomic) IBOutlet UITextField *cellPhoneField;
+- (IBAction)saveBt:(id)sender;
 
 
 @end
