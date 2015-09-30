@@ -461,11 +461,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="665.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qd4-Fs-NB9">
-                                                    <rect key="frame" x="46" y="263" width="282" height="30"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JyA-Q7-MAJ">
                                                     <rect key="frame" x="46" y="330" width="282" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -562,6 +557,11 @@
                                                         <action selector="takePhoto:" destination="KSw-LK-9OV" eventType="touchUpInside" id="6vq-y7-37f"/>
                                                     </connections>
                                                 </button>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qd4-Fs-NB9">
+                                                    <rect key="frame" x="46" y="263" width="282" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="bottomMargin" secondItem="XF9-Kt-AmP" secondAttribute="bottom" constant="29.5" id="280-4f-0Yg"/>

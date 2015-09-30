@@ -81,7 +81,7 @@
     [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (!error)
         {
-            UIAlertController *alert = [SEVAlertViewController styleSimpleWithTitle:@"Perfil atualizado!" andWithMessage:@""];
+            UIAlertController *alert = [SEVAlertViewController styleSimpleWithTitle:@"Perfil atualizado!" andWithMessage:nil];
             [self presentViewController:alert animated:YES completion:nil];
             
         }
