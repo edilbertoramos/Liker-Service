@@ -46,6 +46,8 @@
 		77ACB1331B55E53E0032A82E /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77ACB1301B55E53E0032A82E /* FBSDKShareKit.framework */; };
 		77B9BA691B6A4D8F00DF7517 /* SEVPerfilNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B9BA681B6A4D8F00DF7517 /* SEVPerfilNavigationController.m */; };
 		79DA46871BB969C70074FA8D /* SEVMenuProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79DA46861BB969C70074FA8D /* SEVMenuProfileViewController.m */; settings = {ASSET_TAGS = (); }; };
+		79DA46901BBAD75F0074FA8D /* SEVProfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79DA468F1BBAD75E0074FA8D /* SEVProfileTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		79DA46961BBB326C0074FA8D /* SEVAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79DA46951BBB326C0074FA8D /* SEVAlertViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +121,10 @@
 		77B9BA681B6A4D8F00DF7517 /* SEVPerfilNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEVPerfilNavigationController.m; sourceTree = "<group>"; };
 		79DA46851BB969C70074FA8D /* SEVMenuProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEVMenuProfileViewController.h; sourceTree = "<group>"; };
 		79DA46861BB969C70074FA8D /* SEVMenuProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEVMenuProfileViewController.m; sourceTree = "<group>"; };
+		79DA468E1BBAD75E0074FA8D /* SEVProfileTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEVProfileTableViewController.h; sourceTree = "<group>"; };
+		79DA468F1BBAD75E0074FA8D /* SEVProfileTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEVProfileTableViewController.m; sourceTree = "<group>"; };
+		79DA46941BBB326C0074FA8D /* SEVAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEVAlertViewController.h; sourceTree = "<group>"; };
+		79DA46951BBB326C0074FA8D /* SEVAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEVAlertViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +195,10 @@
 		24117AA51B87711B00905742 /* User */ = {
 			isa = PBXGroup;
 			children = (
+				79DA468E1BBAD75E0074FA8D /* SEVProfileTableViewController.h */,
+				79DA468F1BBAD75E0074FA8D /* SEVProfileTableViewController.m */,
+				79DA46941BBB326C0074FA8D /* SEVAlertViewController.h */,
+				79DA46951BBB326C0074FA8D /* SEVAlertViewController.m */,
 				77653D2A1B59F3B0005D6BAC /* SEVLoginViewController.h */,
 				77653D2B1B59F3B0005D6BAC /* SEVLoginViewController.m */,
 				77135A611B592BF700E23BB4 /* SCProfilePictureButton.h */,
@@ -461,6 +471,8 @@
 				7773F0821B6AD37700A64113 /* SEVModel.m in Sources */,
 				774D62751B6901AA00762FF4 /* SEVServicoNavigationController.m in Sources */,
 				24117AA81B8771D300905742 /* SEVPageImageViewController.m in Sources */,
+				79DA46961BBB326C0074FA8D /* SEVAlertViewController.m in Sources */,
+				79DA46901BBAD75F0074FA8D /* SEVProfileTableViewController.m in Sources */,
 				79DA46871BB969C70074FA8D /* SEVMenuProfileViewController.m in Sources */,
 				776035CA1B552ECD009C7C9F /* facebook_sev7n.xcdatamodeld in Sources */,
 				777199351B67D14F00AFBD44 /* SEVMainTabBarController.m in Sources */,
