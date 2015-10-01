@@ -48,6 +48,7 @@
 		79DA46871BB969C70074FA8D /* SEVMenuProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79DA46861BB969C70074FA8D /* SEVMenuProfileViewController.m */; settings = {ASSET_TAGS = (); }; };
 		79DA46901BBAD75F0074FA8D /* SEVProfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79DA468F1BBAD75E0074FA8D /* SEVProfileTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		79DA46961BBB326C0074FA8D /* SEVAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79DA46951BBB326C0074FA8D /* SEVAlertViewController.m */; settings = {ASSET_TAGS = (); }; };
+		79E4D6C41BBDD13F00F5EC96 /* SEVMeusServicosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E4D6C31BBDD13F00F5EC96 /* SEVMeusServicosViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +126,8 @@
 		79DA468F1BBAD75E0074FA8D /* SEVProfileTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEVProfileTableViewController.m; sourceTree = "<group>"; };
 		79DA46941BBB326C0074FA8D /* SEVAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEVAlertViewController.h; sourceTree = "<group>"; };
 		79DA46951BBB326C0074FA8D /* SEVAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEVAlertViewController.m; sourceTree = "<group>"; };
+		79E4D6C21BBDD13F00F5EC96 /* SEVMeusServicosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEVMeusServicosViewController.h; sourceTree = "<group>"; };
+		79E4D6C31BBDD13F00F5EC96 /* SEVMeusServicosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEVMeusServicosViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +200,8 @@
 			children = (
 				79DA468E1BBAD75E0074FA8D /* SEVProfileTableViewController.h */,
 				79DA468F1BBAD75E0074FA8D /* SEVProfileTableViewController.m */,
+				79E4D6C21BBDD13F00F5EC96 /* SEVMeusServicosViewController.h */,
+				79E4D6C31BBDD13F00F5EC96 /* SEVMeusServicosViewController.m */,
 				79DA46941BBB326C0074FA8D /* SEVAlertViewController.h */,
 				79DA46951BBB326C0074FA8D /* SEVAlertViewController.m */,
 				77653D2A1B59F3B0005D6BAC /* SEVLoginViewController.h */,
@@ -471,6 +476,7 @@
 				7773F0821B6AD37700A64113 /* SEVModel.m in Sources */,
 				774D62751B6901AA00762FF4 /* SEVServicoNavigationController.m in Sources */,
 				24117AA81B8771D300905742 /* SEVPageImageViewController.m in Sources */,
+				79E4D6C41BBDD13F00F5EC96 /* SEVMeusServicosViewController.m in Sources */,
 				79DA46961BBB326C0074FA8D /* SEVAlertViewController.m in Sources */,
 				79DA46901BBAD75F0074FA8D /* SEVProfileTableViewController.m in Sources */,
 				79DA46871BB969C70074FA8D /* SEVMenuProfileViewController.m in Sources */,
