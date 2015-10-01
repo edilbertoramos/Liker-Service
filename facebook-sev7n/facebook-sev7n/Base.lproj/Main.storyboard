@@ -571,7 +571,13 @@
                                                     <rect key="frame" x="46" y="531" width="282" height="30"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XF9-Kt-AmP">
+                                                    <rect key="frame" x="46" y="598" width="282" height="30"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Celular" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XtA-Sb-kZ9">
                                                     <rect key="frame" x="46" y="569" width="54" height="21"/>
@@ -615,12 +621,6 @@
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
-                                                </textField>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XF9-Kt-AmP">
-                                                    <rect key="frame" x="46" y="598" width="282" height="30"/>
-                                                    <animations/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                                 </textField>
                                             </subviews>
                                             <animations/>
@@ -693,17 +693,17 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pKR-ek-fyq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="986.5" y="-707.5"/>
+            <point key="canvasLocation" x="1078.5" y="-666.5"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="xdw-Mv-RqN">
+        <scene sceneID="UPi-0J-gkT">
             <objects>
-                <viewController id="WdF-MH-BmB" sceneMemberID="viewController">
+                <viewController id="QgQ-3G-e0L" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="5yo-HD-YSu"/>
-                        <viewControllerLayoutGuide type="bottom" id="9vI-9f-5lf"/>
+                        <viewControllerLayoutGuide type="top" id="dDB-n1-XRP"/>
+                        <viewControllerLayoutGuide type="bottom" id="bJz-ke-q5f"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="seP-Bw-4nL">
+                    <view key="view" contentMode="scaleToFill" id="ipW-u0-LVm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
@@ -711,9 +711,9 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Mlj-kG-cH3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IDa-UJ-sbb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1015.5" y="54.5"/>
+            <point key="canvasLocation" x="1078.5" y="103.5"/>
         </scene>
         <!--Serviços disponíveis-->
         <scene sceneID="dEd-fK-zeL">
@@ -820,14 +820,6 @@
                                     <outlet property="delegate" destination="fOk-ib-PfD" id="sZS-WF-djj"/>
                                 </connections>
                             </tableView>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R2z-qc-eUu">
-                                <rect key="frame" x="-5" y="65" width="380" height="44"/>
-                                <animations/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="fOk-ib-PfD" id="HUm-GR-qLC"/>
-                                </connections>
-                            </searchBar>
                             <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHk-I1-lf7" userLabel="ButtonProfile">
                                 <rect key="frame" x="277" y="566" width="112" height="108"/>
                                 <animations/>
