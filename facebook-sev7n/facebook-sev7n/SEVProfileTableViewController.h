@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
 #import "SEVAlertViewController.h"
-
+#import "SEVMenuProfileViewController.h"
 @interface SEVProfileTableViewController : UITableViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
