@@ -14,22 +14,26 @@
 
 @implementation SEVProfileTableViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
 
 }
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
     return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
     return 1;
 }
 
@@ -76,19 +80,24 @@
     user[@"referencia"] = self.referenceField.text;
     user[@"telefone"] = self.phoneField.text;
     user[@"celular"] = self.cellPhoneField.text;
-    [user setObject:imageFile forKey:@""]; // salvando a imagem
+    //[user setObject:imageFile forKey:@"foto"]; // salvando a imagem
     
-    [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+   [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error)
+    {
         if (!error)
         {
-            UIAlertController *alert = [SEVAlertViewController styleSimpleWithTitle:@"Perfil atualizado!" andWithMessage:nil];
+            UIAlertController *alert = [SEVAlertViewController styleSimpleWithTitle:@"Perfil atualizado!" andWithMessage:@"Novos campos salvos com sucesso!"];
             [self presentViewController:alert animated:YES completion:nil];
+            
+            NSLog(@"FOI");
             
         }
         else
         {
             UIAlertController *alert = [SEVAlertViewController styleSimpleWithTitle:@"Erro!" andWithMessage:@"Cheque sua conexão com a internet e tente de novo"];
             [self presentViewController:alert animated:YES completion:nil];
+            
+            NSLog(@"NAO FOI");
             
         }
     }];
@@ -107,6 +116,7 @@
     {
         UIAlertController *alert = [SEVAlertViewController styleSimpleWithTitle:@"Alerta!" andWithMessage:@"Preencha todos os campos!"];
         [self presentViewController:alert animated:YES completion:nil];
+        NSLog(@"FALTANDO CAMPOS!");
     }
 }
 
