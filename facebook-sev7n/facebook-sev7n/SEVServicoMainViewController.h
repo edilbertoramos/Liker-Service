@@ -21,6 +21,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *btChaveiro;
 @property (strong, nonatomic) IBOutlet UIView *viewSwip;
 @property (weak, nonatomic) IBOutlet UIButton *profileButton;
+@property (weak, nonatomic) IBOutlet UITextField *searchField;
 
 
 @end

@@ -646,7 +646,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="117" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="4iC-Da-tFc">
-                                <rect key="frame" x="0.0" y="161" width="375" height="507"/>
+                                <rect key="frame" x="0.0" y="186" width="375" height="482"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="117" id="QVi-qU-88Q" customClass="SEVServicosDisponiveisTableViewCell">
@@ -730,20 +730,13 @@
                                     <outlet property="delegate" destination="fOk-ib-PfD" id="sZS-WF-djj"/>
                                 </connections>
                             </tableView>
-                            <searchBar contentMode="redraw" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R2z-qc-eUu">
-                                <rect key="frame" x="-5" y="65" width="380" height="44"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="fOk-ib-PfD" id="HUm-GR-qLC"/>
-                                </connections>
-                            </searchBar>
                             <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHk-I1-lf7" userLabel="ButtonProfile">
                                 <rect key="frame" x="277" y="566" width="112" height="108"/>
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                 <state key="normal" image="icon_perfil"/>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ard-E8-6u2">
-                                <rect key="frame" x="0.0" y="110" width="375" height="47"/>
+                                <rect key="frame" x="0.0" y="131" width="375" height="47"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0so-se-rhF">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="52"/>
@@ -889,20 +882,25 @@
                                     <constraint firstItem="U8L-Th-xS0" firstAttribute="leading" secondItem="ard-E8-6u2" secondAttribute="leading" constant="22" id="taQ-ck-FVt"/>
                                 </constraints>
                             </scrollView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Foz-ZI-kPH">
+                                <rect key="frame" x="13" y="85" width="297" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="bottomMargin" secondItem="HHk-I1-lf7" secondAttribute="bottom" constant="-7" id="0LC-s9-ue6"/>
-                            <constraint firstItem="R2z-qc-eUu" firstAttribute="leading" secondItem="ard-E8-6u2" secondAttribute="leading" constant="-5" id="4h8-Mo-zZa"/>
                             <constraint firstItem="ard-E8-6u2" firstAttribute="leading" secondItem="xik-1I-Qms" secondAttribute="leadingMargin" constant="-20" id="9kb-7L-4VN"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="R2z-qc-eUu" secondAttribute="trailing" constant="-20" id="Bf0-GE-h3X"/>
+                            <constraint firstItem="Foz-ZI-kPH" firstAttribute="leading" secondItem="xik-1I-Qms" secondAttribute="leadingMargin" constant="-7" id="EA0-dh-R86"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4iC-Da-tFc" secondAttribute="trailing" constant="-20" id="Ocx-rP-5nk"/>
-                            <constraint firstItem="ard-E8-6u2" firstAttribute="top" secondItem="24k-Tf-Rj9" secondAttribute="bottom" constant="46" id="Rki-zr-5mS"/>
+                            <constraint firstItem="ard-E8-6u2" firstAttribute="top" secondItem="24k-Tf-Rj9" secondAttribute="bottom" constant="67" id="Rki-zr-5mS"/>
                             <constraint firstAttribute="trailingMargin" secondItem="HHk-I1-lf7" secondAttribute="trailing" constant="-30" id="SaV-zk-Was"/>
-                            <constraint firstItem="R2z-qc-eUu" firstAttribute="top" secondItem="24k-Tf-Rj9" secondAttribute="bottom" constant="1" id="XGj-qB-Snx"/>
-                            <constraint firstItem="4iC-Da-tFc" firstAttribute="top" secondItem="ard-E8-6u2" secondAttribute="bottom" constant="4" id="b7D-3n-ZiF"/>
+                            <constraint firstItem="4iC-Da-tFc" firstAttribute="top" secondItem="ard-E8-6u2" secondAttribute="bottom" constant="8" id="b7D-3n-ZiF"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ard-E8-6u2" secondAttribute="trailing" constant="-20" id="cH2-rj-pRr"/>
                             <constraint firstItem="qxE-a1-l60" firstAttribute="top" secondItem="4iC-Da-tFc" secondAttribute="bottom" constant="-1" id="e5M-qL-UQe"/>
+                            <constraint firstItem="ard-E8-6u2" firstAttribute="top" secondItem="Foz-ZI-kPH" secondAttribute="bottom" constant="16" id="hgf-09-K7k"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Foz-ZI-kPH" secondAttribute="trailing" constant="45" id="v0w-wR-Bn8"/>
                             <constraint firstItem="4iC-Da-tFc" firstAttribute="leading" secondItem="xik-1I-Qms" secondAttribute="leadingMargin" constant="-20" id="xJw-nd-eF1"/>
                         </constraints>
                     </view>
@@ -923,6 +921,7 @@
                         <outlet property="btPintura" destination="Uhg-cY-WOu" id="mv2-Yd-gaL"/>
                         <outlet property="profileButton" destination="HHk-I1-lf7" id="dtj-rN-W7L"/>
                         <outlet property="searchDisplayController" destination="sgI-mZ-w7q" id="ckM-6Q-hZa"/>
+                        <outlet property="searchField" destination="Foz-ZI-kPH" id="iAh-oK-KdM"/>
                         <outlet property="tableView" destination="4iC-Da-tFc" id="zgb-ed-Dod"/>
                         <outlet property="view" destination="xik-1I-Qms" id="3F5-B9-fAj"/>
                         <outlet property="viewSwip" destination="xik-1I-Qms" id="jKn-qO-syK"/>
@@ -935,7 +934,6 @@
                 <searchDisplayController id="sgI-mZ-w7q">
                     <connections>
                         <outlet property="delegate" destination="fOk-ib-PfD" id="Hil-oz-ZIG"/>
-                        <outlet property="searchBar" destination="R2z-qc-eUu" id="cJ5-Qk-cTn"/>
                         <outlet property="searchContentsController" destination="fOk-ib-PfD" id="l3Q-Am-lyD"/>
                         <outlet property="searchResultsDataSource" destination="fOk-ib-PfD" id="P10-yT-aL1"/>
                         <outlet property="searchResultsDelegate" destination="fOk-ib-PfD" id="cEA-Ar-M2v"/>

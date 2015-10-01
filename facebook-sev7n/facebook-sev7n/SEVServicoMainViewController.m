@@ -47,6 +47,14 @@
     
     self.navigationController.navigationBar.layer.borderWidth = 1;
     self.navigationController.navigationBar.layer.borderColor = [SEVMenuProfileViewController SEVYellowColor].CGColor;
+    
+    self.searchField.layer.borderWidth = 1;
+    self.searchField.layer.borderColor = [SEVMenuProfileViewController SEVYellowColor].CGColor;
+    self.searchField.layer.cornerRadius = 7;
+
+    self.searchField.backgroundColor = [UIColor blackColor];
+    self.searchField.placeholder = @"Digite um Serviço";
+    
 }
 
 -(void)swipeLeft:(UISwipeGestureRecognizer*)gestureRecognizer
