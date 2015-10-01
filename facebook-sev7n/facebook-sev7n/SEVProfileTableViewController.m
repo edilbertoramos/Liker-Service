@@ -16,6 +16,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.imageView.layer.cornerRadius = 50;
+    self.imageView.layer.borderWidth = 5;
+    self.imageView.layer.borderColor = [SEVMenuProfileViewController SEVYellowColor].CGColor;
+    
 }
 
 - (void)didReceiveMemoryWarning {

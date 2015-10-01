@@ -492,7 +492,7 @@
         <scene sceneID="7hQ-qK-I2F">
             <objects>
                 <tableViewController id="KSw-LK-9OV" customClass="SEVProfileTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="640" sectionHeaderHeight="28" sectionFooterHeight="28" id="kPE-68-ekk">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="640" sectionHeaderHeight="28" sectionFooterHeight="28" id="kPE-68-ekk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
@@ -500,7 +500,7 @@
                         <sections>
                             <tableViewSection id="Cej-0b-8jZ">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="666" id="P2t-fV-kid">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="666" id="P2t-fV-kid">
                                         <rect key="frame" x="0.0" y="44" width="375" height="666"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="P2t-fV-kid" id="keZ-qy-KFQ">
@@ -601,27 +601,27 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8nq-2D-kAa">
-                                                    <rect key="frame" x="143" y="72" width="89" height="100"/>
+                                                    <rect key="frame" x="137" y="69" width="100" height="100"/>
                                                     <animations/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="89" id="BZZ-4i-rZC"/>
+                                                        <constraint firstAttribute="width" constant="100" id="BZZ-4i-rZC"/>
                                                         <constraint firstAttribute="height" constant="100" id="qms-44-I14"/>
                                                     </constraints>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ffg-l9-a0n">
-                                                    <rect key="frame" x="164" y="185" width="47" height="38"/>
-                                                    <animations/>
-                                                    <state key="normal" image="camera_icon"/>
-                                                    <connections>
-                                                        <action selector="takePhoto:" destination="KSw-LK-9OV" eventType="touchUpInside" id="6vq-y7-37f"/>
-                                                    </connections>
-                                                </button>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qd4-Fs-NB9">
                                                     <rect key="frame" x="46" y="263" width="282" height="30"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ffg-l9-a0n">
+                                                    <rect key="frame" x="164" y="177" width="47" height="38"/>
+                                                    <animations/>
+                                                    <state key="normal" image="camera_icon"/>
+                                                    <connections>
+                                                        <action selector="takePhoto:" destination="KSw-LK-9OV" eventType="touchUpInside" id="6vq-y7-37f"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <animations/>
                                             <constraints>
@@ -637,13 +637,13 @@
                                                 <constraint firstItem="ebB-oD-OGl" firstAttribute="top" secondItem="Hbc-F3-r4p" secondAttribute="bottom" constant="8" symbolic="YES" id="O9M-1g-3n4"/>
                                                 <constraint firstItem="n8a-WX-yFc" firstAttribute="leading" secondItem="keZ-qy-KFQ" secondAttribute="leadingMargin" constant="38" id="Oia-9e-mdy"/>
                                                 <constraint firstItem="8nq-2D-kAa" firstAttribute="centerX" secondItem="ebB-oD-OGl" secondAttribute="centerX" id="QNC-iM-w3t"/>
-                                                <constraint firstItem="8nq-2D-kAa" firstAttribute="top" secondItem="keZ-qy-KFQ" secondAttribute="topMargin" constant="64" id="RDC-Tv-RcH"/>
+                                                <constraint firstItem="8nq-2D-kAa" firstAttribute="top" secondItem="keZ-qy-KFQ" secondAttribute="topMargin" constant="61" id="RDC-Tv-RcH"/>
                                                 <constraint firstItem="Hbc-F3-r4p" firstAttribute="leading" secondItem="JU5-WX-u17" secondAttribute="leading" id="Rb4-H8-Jky"/>
                                                 <constraint firstItem="D4Q-gs-Ty5" firstAttribute="leading" secondItem="JyA-Q7-MAJ" secondAttribute="leading" id="Syp-gk-5mJ"/>
                                                 <constraint firstItem="RPz-RF-7uf" firstAttribute="leading" secondItem="JU5-WX-u17" secondAttribute="leading" id="T1e-vA-cvw"/>
                                                 <constraint firstItem="8nq-2D-kAa" firstAttribute="centerX" secondItem="XF9-Kt-AmP" secondAttribute="centerX" id="VcU-ci-JjQ"/>
                                                 <constraint firstItem="RFk-Tl-rcQ" firstAttribute="leading" secondItem="D4Q-gs-Ty5" secondAttribute="leading" id="a3m-ga-KgI"/>
-                                                <constraint firstItem="Ffg-l9-a0n" firstAttribute="top" secondItem="8nq-2D-kAa" secondAttribute="bottom" constant="13" id="a4f-m2-AqY"/>
+                                                <constraint firstItem="Ffg-l9-a0n" firstAttribute="top" secondItem="8nq-2D-kAa" secondAttribute="bottom" constant="8" id="a4f-m2-AqY"/>
                                                 <constraint firstItem="8nq-2D-kAa" firstAttribute="centerX" secondItem="qd4-Fs-NB9" secondAttribute="centerX" id="as7-mD-THu"/>
                                                 <constraint firstItem="8nq-2D-kAa" firstAttribute="centerX" secondItem="JU5-WX-u17" secondAttribute="centerX" id="dhC-FH-unV"/>
                                                 <constraint firstItem="XtA-Sb-kZ9" firstAttribute="leading" secondItem="XF9-Kt-AmP" secondAttribute="leading" id="e1P-VE-Wqk"/>
