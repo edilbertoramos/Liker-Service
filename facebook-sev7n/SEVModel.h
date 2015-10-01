@@ -14,6 +14,8 @@
 typedef void(^myCompletion)(BOOL);
 typedef void(^myImge)(UIImage *);
 
+#pragma busca pelos servicos
+
 - (void)salvaServicoWithDetalhe:(NSString *)detalhe andDescricao:(NSString *)descricao andEndereco:(NSString *)endereco andTelefone:(NSString *)telefone andImage1:(UIImage *)image1 andImage2:(UIImage *)image2 andImage3:(UIImage *)image3 andTipo:(NSString *)tipo completion:(myCompletion) compblock;
 - (void)salvaPropostaNoServico:(PFObject *)servico completion:(myCompletion) compblock;
 
@@ -25,6 +27,10 @@ typedef void(^myImge)(UIImage *);
 
 + (NSArray *)BuscaServicosComoCliente;
 
+- (void)buscaImageWithServico: (NSDictionary *)servico andWithIndex: (NSInteger)index andWithSize: (CGSize)size completion:(myImge) compblock;
+
+#pragma tipos de servico
+
 + (NSString *)alvenaria;
 + (NSString *)chaveiro;
 + (NSString *)eletrica;
@@ -34,7 +40,16 @@ typedef void(^myImge)(UIImage *);
 
 + (NSString *)servicoSelecionado;
 
-- (void)buscaImageWithServico: (NSDictionary *)servico andWithIndex: (NSInteger)index andWithSize: (CGSize)size completion:(myImge) compblock;
+#pragma meus servicos
+
++ (NSString *)meusContatos;
++ (NSString *)clientes;
++ (NSString *)favoritos;
++ (NSString *)adicionados;
+
++(NSString *)meusServicos;
+
+
 
 @end
 

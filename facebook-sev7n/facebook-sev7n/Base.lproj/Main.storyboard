@@ -701,7 +701,7 @@
         <!--Meus Serviços-->
         <scene sceneID="UPi-0J-gkT">
             <objects>
-                <viewController id="QgQ-3G-e0L" sceneMemberID="viewController">
+                <viewController id="QgQ-3G-e0L" customClass="SEVMeusServicosViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dDB-n1-XRP"/>
                         <viewControllerLayoutGuide type="bottom" id="bJz-ke-q5f"/>
@@ -714,21 +714,33 @@
                                 <rect key="frame" x="49" y="92" width="46" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="meusContatos:" destination="QgQ-3G-e0L" eventType="touchUpInside" id="xnE-Z3-TMY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZ7-A3-gen">
                                 <rect key="frame" x="211" y="92" width="46" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="favoritos:" destination="QgQ-3G-e0L" eventType="touchUpInside" id="eZK-FE-isP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3k-uc-7L0">
                                 <rect key="frame" x="294" y="92" width="46" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="adicionados:" destination="QgQ-3G-e0L" eventType="touchUpInside" id="QC4-ug-ZQd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L5y-Bz-vIg">
                                 <rect key="frame" x="125" y="92" width="46" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="clientes:" destination="QgQ-3G-e0L" eventType="touchUpInside" id="NOw-Es-U2Q"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="117" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="rZo-tB-DMC">
                                 <rect key="frame" x="0.0" y="150" width="375" height="517"/>
@@ -825,10 +837,13 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="wwX-7D-14X"/>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="tableView" destination="rZo-tB-DMC" id="BBV-bl-pQH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IDa-UJ-sbb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1215.5" y="121.5"/>
+            <point key="canvasLocation" x="1078.5" y="108.5"/>
         </scene>
         <!--Serviços disponíveis-->
         <scene sceneID="dEd-fK-zeL">

@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SEVMeusServicosViewController : UIViewController
+@interface SEVMeusServicosViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+
+- (IBAction)meusContatos:(id)sender;
+- (IBAction)clientes:(id)sender;
+- (IBAction)favoritos:(id)sender;
+- (IBAction)adicionados:(id)sender;
 
 @end

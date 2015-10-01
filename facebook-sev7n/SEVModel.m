@@ -11,7 +11,7 @@
 @implementation SEVModel
 
 
--(void)salvaServicoWithDetalhe:(NSString *)detalhe andDescricao:(NSString *)descricao andEndereco:(NSString *)endereco andTelefone:(NSString *)telefone andImage1:(UIImage *)image1 andImage2:(UIImage *)image2 andImage3:(UIImage *)image3 andTipo:(NSString *)tipo completion:(myCompletion) compblock
+- (void)salvaServicoWithDetalhe:(NSString *)detalhe andDescricao:(NSString *)descricao andEndereco:(NSString *)endereco andTelefone:(NSString *)telefone andImage1:(UIImage *)image1 andImage2:(UIImage *)image2 andImage3:(UIImage *)image3 andTipo:(NSString *)tipo completion:(myCompletion) compblock
 {
     if (![descricao isEqualToString:@""] && ![detalhe isEqualToString:@""] && ![endereco isEqualToString:@""]  && ![telefone isEqualToString:@""])
     {
@@ -168,8 +168,7 @@
     }];
 }
 
-
-
+#pragma tipos de servico
 
 + (NSString *)alvenaria{
     sericoSelecionado = @"alvenaria";
@@ -201,5 +200,40 @@ static NSString* sericoSelecionado;
 + (NSString *)servicoSelecionado{
     return sericoSelecionado;
 }
+
+#pragma meus servicos
+
++ (NSString *)meusContatos
+{
+    meusServicos = @"meus-contatos";
+    return meusServicos;
+}
+
++ (NSString *)clientes
+{
+    meusServicos = @"clientes";
+    return meusServicos;
+}
+
++ (NSString *)favoritos
+{
+    meusServicos = @"favoritos";
+    return meusServicos;
+}
+
++ (NSString *)adicionados
+{
+    meusServicos = @"adicionados";
+    return meusServicos;
+}
+
+static NSString *meusServicos;
+
++ (NSString *)meusServicos
+{
+    return meusServicos;
+}
+
+
 
 @end

@@ -9,29 +9,60 @@
 #import "SEVMeusServicosViewController.h"
 
 @interface SEVMeusServicosViewController ()
+{
+    NSArray *servicos;
+}
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
 @implementation SEVMeusServicosViewController
 
-- (void)viewDidLoad {
+
+
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+#pragma table view methods
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 3;
 }
-*/
+
+//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    SEVMeusServicosViewController *cell = 
+//}
+
+
+- (IBAction)meusContatos:(id)sender
+{
+    
+}
+
+- (IBAction)clientes:(id)sender
+{
+    
+}
+
+- (IBAction)favoritos:(id)sender
+{
+    
+}
+
+- (IBAction)adicionados:(id)sender
+{
+    
+}
 
 @end
