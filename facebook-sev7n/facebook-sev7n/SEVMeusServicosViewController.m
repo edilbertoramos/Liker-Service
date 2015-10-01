@@ -32,9 +32,17 @@
     [super didReceiveMemoryWarning];
 }
 
-- (void)viewDidAppear:(BOOL)animated {
-    
-        
+#pragma model methods
+
+- (void)queryServicesWithType: (NSString *)tiposServicos
+{
+    servicos = [SEVModel buscaMeusServicos:tiposServicos];
+    [self.tableView reloadData];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [self queryServicesWithType:[SEVModel meusServicos]];
 }
 
 #pragma table view methods
@@ -50,24 +58,29 @@
 //}
 
 
+#pragma buttons methods
+
+// estabelendo uma ligação com o modelo para fazer as requisições no Parse
 - (IBAction)meusContatos:(id)sender
 {
-    
+    [self queryServicesWithType:[SEVModel meusContatos]];
 }
 
 - (IBAction)clientes:(id)sender
 {
-    
+    [self queryServicesWithType:[SEVModel clientes]];
 }
 
 - (IBAction)favoritos:(id)sender
 {
-    
+    [self queryServicesWithType:[SEVModel favoritos]];
+
 }
 
 - (IBAction)adicionados:(id)sender
 {
-    
+    [self queryServicesWithType:[SEVModel adicionados]];
+
 }
 
 @end
