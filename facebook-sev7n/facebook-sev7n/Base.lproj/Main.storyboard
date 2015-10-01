@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="PHj-el-NpR">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -770,35 +770,26 @@
                                                     <animations/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="90" id="GPz-50-o82"/>
-                                                        <constraint firstAttribute="height" constant="90" id="K2v-yJ-dgc"/>
-                                                        <constraint firstAttribute="width" constant="90" id="RLs-gt-J8Y"/>
+                                                        <constraint firstAttribute="width" constant="90" id="WxM-TI-UAc"/>
                                                     </constraints>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
-                                                            <integer key="value" value="5"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                            <integer key="value" value="45"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                </imageView>
+                                                    <state key="normal" backgroundImage="todosIcon"/>
+                                                </button>
                                             </subviews>
                                             <animations/>
                                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
+                                                <constraint firstItem="e6v-80-qin" firstAttribute="top" secondItem="BMs-Dd-Wf3" secondAttribute="topMargin" constant="6" id="2Bq-qB-Bul"/>
                                                 <constraint firstItem="0RU-cV-G55" firstAttribute="top" secondItem="BMs-Dd-Wf3" secondAttribute="topMargin" constant="23" id="2sF-cm-tPd"/>
-                                                <constraint firstItem="hUc-Kh-coj" firstAttribute="leading" secondItem="BMs-Dd-Wf3" secondAttribute="leadingMargin" constant="7" id="Ct5-oj-vY6"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="0RU-cV-G55" secondAttribute="trailing" constant="10" id="X7c-Sm-VUc"/>
-                                                <constraint firstItem="hUc-Kh-coj" firstAttribute="top" secondItem="BMs-Dd-Wf3" secondAttribute="topMargin" id="d0z-uL-Kma"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="hUc-Kh-coj" secondAttribute="bottom" constant="11" id="jDz-AD-cwb"/>
                                                 <constraint firstItem="0RU-cV-G55" firstAttribute="leading" secondItem="BMs-Dd-Wf3" secondAttribute="leadingMargin" id="kVd-no-VSS"/>
+                                                <constraint firstItem="e6v-80-qin" firstAttribute="leading" secondItem="BMs-Dd-Wf3" secondAttribute="leadingMargin" constant="13" id="p0G-TK-KTd"/>
+                                                <constraint firstItem="e6v-80-qin" firstAttribute="centerY" secondItem="BMs-Dd-Wf3" secondAttribute="centerY" id="pTx-Ac-em4"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="0RU-cV-G55" secondAttribute="bottom" constant="-7" id="ue9-sT-bQq"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <animations/>
                                         <connections>
-                                            <outlet property="imageView" destination="hUc-Kh-coj" id="CIv-TN-DFC"/>
+                                            <outlet property="imageButton" destination="e6v-80-qin" id="aFH-HI-SI4"/>
                                             <outlet property="labelPrincipal" destination="eH4-Cz-eQN" id="VSG-VB-spU"/>
                                             <outlet property="labelSecundario" destination="fga-pD-r8A" id="ECC-F0-xkX"/>
                                             <outlet property="viewCell" destination="0RU-cV-G55" id="tvf-1G-DjH"/>
@@ -825,7 +816,7 @@
                                 <state key="normal" image="icon_perfil"/>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ard-E8-6u2">
-                                <rect key="frame" x="0.0" y="110" width="375" height="47"/>
+                                <rect key="frame" x="0.0" y="131" width="375" height="47"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0so-se-rhF">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="52"/>
@@ -986,21 +977,26 @@
                                     <constraint firstItem="U8L-Th-xS0" firstAttribute="leading" secondItem="ard-E8-6u2" secondAttribute="leading" constant="22" id="taQ-ck-FVt"/>
                                 </constraints>
                             </scrollView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Foz-ZI-kPH">
+                                <rect key="frame" x="13" y="85" width="297" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="bottomMargin" secondItem="HHk-I1-lf7" secondAttribute="bottom" constant="-7" id="0LC-s9-ue6"/>
-                            <constraint firstItem="R2z-qc-eUu" firstAttribute="leading" secondItem="ard-E8-6u2" secondAttribute="leading" constant="-5" id="4h8-Mo-zZa"/>
                             <constraint firstItem="ard-E8-6u2" firstAttribute="leading" secondItem="xik-1I-Qms" secondAttribute="leadingMargin" constant="-20" id="9kb-7L-4VN"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="R2z-qc-eUu" secondAttribute="trailing" constant="-20" id="Bf0-GE-h3X"/>
+                            <constraint firstItem="Foz-ZI-kPH" firstAttribute="leading" secondItem="xik-1I-Qms" secondAttribute="leadingMargin" constant="-7" id="EA0-dh-R86"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4iC-Da-tFc" secondAttribute="trailing" constant="-20" id="Ocx-rP-5nk"/>
-                            <constraint firstItem="ard-E8-6u2" firstAttribute="top" secondItem="24k-Tf-Rj9" secondAttribute="bottom" constant="46" id="Rki-zr-5mS"/>
+                            <constraint firstItem="ard-E8-6u2" firstAttribute="top" secondItem="24k-Tf-Rj9" secondAttribute="bottom" constant="67" id="Rki-zr-5mS"/>
                             <constraint firstAttribute="trailingMargin" secondItem="HHk-I1-lf7" secondAttribute="trailing" constant="-30" id="SaV-zk-Was"/>
-                            <constraint firstItem="R2z-qc-eUu" firstAttribute="top" secondItem="24k-Tf-Rj9" secondAttribute="bottom" constant="1" id="XGj-qB-Snx"/>
-                            <constraint firstItem="4iC-Da-tFc" firstAttribute="top" secondItem="ard-E8-6u2" secondAttribute="bottom" constant="4" id="b7D-3n-ZiF"/>
+                            <constraint firstItem="4iC-Da-tFc" firstAttribute="top" secondItem="ard-E8-6u2" secondAttribute="bottom" constant="8" id="b7D-3n-ZiF"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ard-E8-6u2" secondAttribute="trailing" constant="-20" id="cH2-rj-pRr"/>
                             <constraint firstItem="qxE-a1-l60" firstAttribute="top" secondItem="4iC-Da-tFc" secondAttribute="bottom" constant="-1" id="e5M-qL-UQe"/>
+                            <constraint firstItem="ard-E8-6u2" firstAttribute="top" secondItem="Foz-ZI-kPH" secondAttribute="bottom" constant="16" id="hgf-09-K7k"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Foz-ZI-kPH" secondAttribute="trailing" constant="45" id="v0w-wR-Bn8"/>
                             <constraint firstItem="4iC-Da-tFc" firstAttribute="leading" secondItem="xik-1I-Qms" secondAttribute="leadingMargin" constant="-20" id="xJw-nd-eF1"/>
                         </constraints>
                     </view>
@@ -1021,6 +1017,7 @@
                         <outlet property="btPintura" destination="Uhg-cY-WOu" id="mv2-Yd-gaL"/>
                         <outlet property="profileButton" destination="HHk-I1-lf7" id="dtj-rN-W7L"/>
                         <outlet property="searchDisplayController" destination="sgI-mZ-w7q" id="ckM-6Q-hZa"/>
+                        <outlet property="searchField" destination="Foz-ZI-kPH" id="iAh-oK-KdM"/>
                         <outlet property="tableView" destination="4iC-Da-tFc" id="zgb-ed-Dod"/>
                         <outlet property="view" destination="xik-1I-Qms" id="3F5-B9-fAj"/>
                         <outlet property="viewSwip" destination="xik-1I-Qms" id="jKn-qO-syK"/>
@@ -1033,7 +1030,6 @@
                 <searchDisplayController id="sgI-mZ-w7q">
                     <connections>
                         <outlet property="delegate" destination="fOk-ib-PfD" id="Hil-oz-ZIG"/>
-                        <outlet property="searchBar" destination="R2z-qc-eUu" id="cJ5-Qk-cTn"/>
                         <outlet property="searchContentsController" destination="fOk-ib-PfD" id="l3Q-Am-lyD"/>
                         <outlet property="searchResultsDataSource" destination="fOk-ib-PfD" id="P10-yT-aL1"/>
                         <outlet property="searchResultsDelegate" destination="fOk-ib-PfD" id="cEA-Ar-M2v"/>
@@ -1344,6 +1340,7 @@
         <image name="icon_perfil" width="112" height="108"/>
         <image name="limpezaIcon" width="1024" height="1024"/>
         <image name="pinturaIcon" width="1024" height="1024"/>
+        <image name="todosIcon" width="800" height="800"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="eoR-ZY-h0f"/>

@@ -13,8 +13,9 @@
 - (void)awakeFromNib
 {
     self.viewCell.layer.borderColor = [UIColor colorWithRed:1 green:0.831 blue:0.29 alpha:1].CGColor; // cor da borda
-    self.imageView.layer.borderColor = [UIColor colorWithRed:1 green:0.831 blue:0.29 alpha:1].CGColor;
-    self.imageView.image = [UIImage imageNamed:@"todosIcon"];
+    self.imageButton.layer.borderColor = [UIColor colorWithRed:1 green:0.831 blue:0.29 alpha:1].CGColor;
+    self.imageButton.layer.cornerRadius = 45;
+    self.imageButton.layer.borderWidth = 5;
     
 }
 
