@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
+#import "SEVModel.h"
 
 @interface SEVMeusServicosViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 

@@ -27,6 +27,8 @@ typedef void(^myImge)(UIImage *);
 
 + (NSArray *)BuscaServicosComoCliente;
 
++ (NSArray *)buscaMeusServicos: (NSString *)meusTiposServicos;
+
 - (void)buscaImageWithServico: (NSDictionary *)servico andWithIndex: (NSInteger)index andWithSize: (CGSize)size completion:(myImge) compblock;
 
 #pragma tipos de servico
@@ -47,7 +49,8 @@ typedef void(^myImge)(UIImage *);
 + (NSString *)favoritos;
 + (NSString *)adicionados;
 
-+(NSString *)meusServicos;
++ (NSString *)meusServicos;
+
 
 
 

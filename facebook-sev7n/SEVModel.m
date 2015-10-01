@@ -91,6 +91,15 @@
     return [servicosDisponiveis findObjects];
 }
 
++ (NSArray *)buscaMeusServicos:(NSString *)meusTiposServicos
+{
+    PFQuery *servicos = [PFQuery queryWithClassName:@"meus-servicos"];
+    
+    [servicos whereKey:@"tipos-servico" equalTo:meusTiposServicos];
+    
+    return [servicos findObjects];
+}
+
 + (NSArray *)BuscaServicosComoProfissional{
     
     
