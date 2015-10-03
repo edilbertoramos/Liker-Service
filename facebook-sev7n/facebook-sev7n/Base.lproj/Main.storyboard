@@ -746,25 +746,17 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="117"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ske-v6-p3S" userLabel="imageButton">
-                                                    <rect key="frame" x="21" y="14" width="90" height="90"/>
-                                                    <animations/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="90" id="oIy-H2-TYe"/>
-                                                    </constraints>
-                                                    <state key="normal" backgroundImage="todosIcon"/>
-                                                </button>
-                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Px9-lg-Jj6">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Px9-lg-Jj6">
                                                     <rect key="frame" x="8" y="32" width="349" height="85"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ntw-7T-j2C">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ntw-7T-j2C">
                                                             <rect key="frame" x="109" y="0.0" width="212" height="35"/>
                                                             <animations/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="1" green="0.83137254900000002" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eR8-oN-I72">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eR8-oN-I72">
                                                             <rect key="frame" x="109" y="32" width="183" height="21"/>
                                                             <animations/>
                                                             <constraints>
@@ -774,25 +766,16 @@
                                                             <color key="textColor" red="1" green="0.83137254900000002" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AUv-66-quR">
-                                                            <rect key="frame" x="307" y="32" width="34" height="33"/>
-                                                            <animations/>
-                                                            <state key="normal" image="Fav1"/>
-                                                        </button>
                                                     </subviews>
                                                     <animations/>
                                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="bottom" secondItem="Ntw-7T-j2C" secondAttribute="bottom" constant="50" id="31y-gd-8Sn"/>
                                                         <constraint firstItem="eR8-oN-I72" firstAttribute="leading" secondItem="Ntw-7T-j2C" secondAttribute="leading" id="4YZ-nz-EKc"/>
-                                                        <constraint firstItem="AUv-66-quR" firstAttribute="top" secondItem="Px9-lg-Jj6" secondAttribute="top" constant="26" id="5qD-UA-SPg"/>
                                                         <constraint firstItem="Ntw-7T-j2C" firstAttribute="top" secondItem="Px9-lg-Jj6" secondAttribute="top" id="FyX-Bf-RFd"/>
                                                         <constraint firstItem="eR8-oN-I72" firstAttribute="top" secondItem="Px9-lg-Jj6" secondAttribute="top" constant="32" id="GRH-pv-C0J"/>
-                                                        <constraint firstItem="AUv-66-quR" firstAttribute="centerY" secondItem="eR8-oN-I72" secondAttribute="centerY" id="L3D-4z-vaV"/>
                                                         <constraint firstAttribute="trailing" secondItem="Ntw-7T-j2C" secondAttribute="trailing" constant="28" id="WLt-jz-4ov"/>
                                                         <constraint firstItem="eR8-oN-I72" firstAttribute="centerY" secondItem="Px9-lg-Jj6" secondAttribute="centerY" id="WnT-Pn-3aY"/>
-                                                        <constraint firstAttribute="trailing" secondItem="AUv-66-quR" secondAttribute="trailing" constant="15" id="f6m-Pr-Hx7"/>
-                                                        <constraint firstItem="AUv-66-quR" firstAttribute="leading" secondItem="eR8-oN-I72" secondAttribute="trailing" constant="8" id="vO0-Ot-NeK"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
@@ -800,12 +783,20 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
+                                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ske-v6-p3S" userLabel="imageButton">
+                                                    <rect key="frame" x="21" y="14" width="90" height="90"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="90" id="oIy-H2-TYe"/>
+                                                    </constraints>
+                                                    <state key="normal" backgroundImage="todosIcon"/>
+                                                </button>
                                             </subviews>
                                             <animations/>
                                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
-                                                <constraint firstItem="Px9-lg-Jj6" firstAttribute="top" secondItem="SSh-6u-sG1" secondAttribute="topMargin" constant="23" id="LMt-Th-Yvv"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="Px9-lg-Jj6" secondAttribute="bottom" constant="-7" id="QmO-3E-VP7"/>
+                                                <constraint firstItem="Px9-lg-Jj6" firstAttribute="top" secondItem="SSh-6u-sG1" secondAttribute="topMargin" constant="24" id="LMt-Th-Yvv"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Px9-lg-Jj6" secondAttribute="bottom" constant="-8" id="QmO-3E-VP7"/>
                                                 <constraint firstItem="Px9-lg-Jj6" firstAttribute="leading" secondItem="SSh-6u-sG1" secondAttribute="leadingMargin" id="UzD-Sy-1m5"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="Px9-lg-Jj6" secondAttribute="trailing" constant="10" id="mcp-V8-OTo"/>
                                                 <constraint firstItem="Ske-v6-p3S" firstAttribute="leading" secondItem="SSh-6u-sG1" secondAttribute="leadingMargin" constant="13" id="pQI-ex-8xc"/>
@@ -815,8 +806,10 @@
                                         </tableViewCellContentView>
                                         <animations/>
                                         <connections>
+                                            <outlet property="imageServie" destination="Ske-v6-p3S" id="Mje-G7-adJ"/>
                                             <outlet property="label1" destination="Ntw-7T-j2C" id="sP1-BD-wnZ"/>
                                             <outlet property="label2" destination="eR8-oN-I72" id="lON-br-7hA"/>
+                                            <outlet property="viewServie" destination="Px9-lg-Jj6" id="QEd-1J-8gI"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
