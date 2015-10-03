@@ -212,12 +212,6 @@ static NSString* sericoSelecionado;
 
 #pragma meus servicos
 
-+ (NSString *)meusContatos
-{
-    meusServicos = @"meus-contatos";
-    return meusServicos;
-}
-
 + (NSString *)clientes
 {
     meusServicos = @"clientes";

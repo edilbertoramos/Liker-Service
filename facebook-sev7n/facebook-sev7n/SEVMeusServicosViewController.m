@@ -21,6 +21,7 @@
 
 
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -47,25 +48,36 @@
 
 #pragma table view methods
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+- (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 3;
+    return servicos.count;
 }
 
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    SEVMeusServicosViewController *cell = 
-//}
+- (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    SEVServicosDisponiveisTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    
+    if (tableView == self.tableView)
+    {
+        cell.labelPrincipal.text  = [servicos[indexPath.row] objectForKey:@"descricao"];
+        cell.labelSecundario.text  = [servicos[indexPath.row] objectForKey:@"detalhe"];
+    }
+
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    // [self performSegueWithIdentifier:@"DetalhesServicoDisponivel" sender:self];
+    
+    
+}
+
 
 
 #pragma buttons methods
 
 // estabelendo uma ligação com o modelo para fazer as requisições no Parse
-- (IBAction)meusContatos:(id)sender
-{
-    [self queryServicesWithType:[SEVModel meusContatos]];
-}
-
 - (IBAction)clientes:(id)sender
 {
     [self queryServicesWithType:[SEVModel clientes]];
@@ -74,13 +86,11 @@
 - (IBAction)favoritos:(id)sender
 {
     [self queryServicesWithType:[SEVModel favoritos]];
-
 }
 
 - (IBAction)adicionados:(id)sender
 {
     [self queryServicesWithType:[SEVModel adicionados]];
-
 }
 
 @end

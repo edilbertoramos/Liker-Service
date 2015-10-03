@@ -45,7 +45,6 @@ typedef void(^myImge)(UIImage *);
 #pragma meus servicos
 
 // métodos para cada objeto da tela
-+ (NSString *)meusContatos;
 + (NSString *)clientes;
 + (NSString *)favoritos;
 + (NSString *)adicionados;
