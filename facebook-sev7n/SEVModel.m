@@ -143,7 +143,7 @@
     
     PFQuery *servicos = [PFQuery queryWithClassName:@"Servico"];
 
-    [servicos whereKey:@"User" equalTo:[PFUser currentUser]];
+    [servicos whereKey:@"_User" equalTo:[PFUser currentUser]];
     
     return  servicos.findObjects;
 

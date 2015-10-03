@@ -34,6 +34,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    PFUser *user = [PFUser currentUser];
+    NSLog(@"%@", [user objectForKey:@"nome"]);
     [self queryServicesWithType:[SEVModel eletrica]];
     searchResults = [[NSArray alloc] init];
     

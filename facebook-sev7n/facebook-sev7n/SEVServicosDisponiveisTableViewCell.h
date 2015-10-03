@@ -14,5 +14,10 @@
 @property (strong, nonatomic) IBOutlet UILabel *labelSecundario;
 @property (weak, nonatomic) IBOutlet UIView *viewCell;
 @property (weak, nonatomic) IBOutlet UIButton *imageButton;
+@property (weak, nonatomic) IBOutlet UILabel *label1;
+@property (weak, nonatomic) IBOutlet UILabel *label2;
+
+
+
 
 @end

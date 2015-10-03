@@ -60,8 +60,8 @@
     
     if (tableView == self.tableView)
     {
-        cell.labelPrincipal.text  = [servicos[indexPath.row] objectForKey:@"descricao"];
-        cell.labelSecundario.text  = [servicos[indexPath.row] objectForKey:@"detalhe"];
+        cell.label1.text  = [servicos[indexPath.row] objectForKey:@"descricao"];
+        cell.label2.text  = [servicos[indexPath.row] objectForKey:@"detalhe"];
     }
 
     return cell;
