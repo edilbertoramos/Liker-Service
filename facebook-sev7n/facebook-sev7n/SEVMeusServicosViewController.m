@@ -25,6 +25,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self queryServicesWithType:[SEVModel clientes]];
     
 }
 
@@ -37,7 +38,7 @@
 
 - (void)queryServicesWithType: (NSString *)tiposServicos
 {
-    servicos = [SEVModel buscaMeusServicos:tiposServicos];
+    servicos = [SEVModel BuscaServicosComoCliente];
     [self.tableView reloadData];
 }
 
@@ -66,11 +67,10 @@
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
     
     // [self performSegueWithIdentifier:@"DetalhesServicoDisponivel" sender:self];
-    
-    
 }
 
 
