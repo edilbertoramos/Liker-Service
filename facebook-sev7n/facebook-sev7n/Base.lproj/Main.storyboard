@@ -243,7 +243,7 @@
             </objects>
             <point key="canvasLocation" x="3726.5" y="-109.5"/>
         </scene>
-        <!--Novo Detalhes Table View Controller-->
+        <!--Adicionar-->
         <scene sceneID="dOT-1p-Ehx">
             <objects>
                 <tableViewController id="H5y-2R-6q5" customClass="SEVNovoDetalhesTableViewController" sceneMemberID="viewController">
@@ -256,7 +256,7 @@
                             <tableViewSection id="Jhq-r3-cuU">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="638" id="keS-Cu-IsV">
-                                        <rect key="frame" x="0.0" y="64" width="375" height="638"/>
+                                        <rect key="frame" x="0.0" y="44" width="375" height="638"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="keS-Cu-IsV" id="bhw-dd-EaB">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="638"/>
@@ -317,16 +317,6 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                                 </textField>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8G-Ks-MU2">
-                                                    <rect key="frame" x="142" y="588" width="91" height="30"/>
-                                                    <animations/>
-                                                    <state key="normal" title="Criar serviço!">
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="criarServico:" destination="H5y-2R-6q5" eventType="touchUpInside" id="B1X-yO-SFO"/>
-                                                    </connections>
-                                                </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NF1-Cc-SHl">
                                                     <rect key="frame" x="256" y="490" width="80" height="80"/>
                                                     <animations/>
@@ -380,6 +370,9 @@
                             <outlet property="delegate" destination="H5y-2R-6q5" id="gd9-Vf-3Gw"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Adicionar" id="nAM-8H-Ovs">
+                        <barButtonItem key="rightBarButtonItem" title="Salvar" id="6D6-mI-OVp"/>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="descricaoLabel" destination="q5n-ch-aPn" id="ZYm-33-Kye"/>
@@ -394,7 +387,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pqB-qU-umm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2308.5" y="924.5"/>
+            <point key="canvasLocation" x="1690.5" y="122.5"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="47d-Fq-igb">
@@ -823,7 +816,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Meus Serviços" id="ALr-VY-jR2">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="wwX-7D-14X"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="wwX-7D-14X">
+                            <connections>
+                                <segue destination="H5y-2R-6q5" kind="show" id="gjr-xs-kNA"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -1474,6 +1471,7 @@
         <image name="todosIcon" width="800" height="800"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="gjr-xs-kNA"/>
         <segue reference="eoR-ZY-h0f"/>
     </inferredMetricsTieBreakers>
 </document>
