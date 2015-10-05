@@ -371,7 +371,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Adicionar" id="nAM-8H-Ovs">
-                        <barButtonItem key="rightBarButtonItem" title="Salvar" id="6D6-mI-OVp"/>
+                        <barButtonItem key="rightBarButtonItem" title="Salvar" id="6D6-mI-OVp">
+                            <connections>
+                                <action selector="criarServico:" destination="H5y-2R-6q5" id="Pst-QN-cs0"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
