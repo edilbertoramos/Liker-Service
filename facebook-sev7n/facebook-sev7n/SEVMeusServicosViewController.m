@@ -78,6 +78,7 @@
 #pragma buttons methods
 
 // estabelendo uma ligação com o modelo para fazer as requisições no Parse
+
 - (IBAction)clientes:(id)sender
 {
     [self queryServicesWithType:[SEVModel clientes]];
