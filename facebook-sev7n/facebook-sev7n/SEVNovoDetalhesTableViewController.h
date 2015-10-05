@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface SEVNovoDetalhesTableViewController : UITableViewController
+
 @property (strong, nonatomic) IBOutlet UILabel *tipoLabel;
 
 @property (strong) NSString *tipo;

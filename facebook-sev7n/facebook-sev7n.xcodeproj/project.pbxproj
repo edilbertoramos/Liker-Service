@@ -205,8 +205,6 @@
 				79DA468F1BBAD75E0074FA8D /* SEVProfileTableViewController.m */,
 				79E4D6C21BBDD13F00F5EC96 /* SEVMeusServicosViewController.h */,
 				79E4D6C31BBDD13F00F5EC96 /* SEVMeusServicosViewController.m */,
-				794114B41BC2F7C10098CD84 /* SEVAdicionarServicoViewController.h */,
-				794114B51BC2F7C10098CD84 /* SEVAdicionarServicoViewController.m */,
 				79DA46941BBB326C0074FA8D /* SEVAlertViewController.h */,
 				79DA46951BBB326C0074FA8D /* SEVAlertViewController.m */,
 				77653D2A1B59F3B0005D6BAC /* SEVLoginViewController.h */,
@@ -243,6 +241,8 @@
 				776035CC1B552ECD009C7C9F /* SEVNovoMainViewController.m */,
 				774D62761B6917A000762FF4 /* SEVNovoDetalhesTableViewController.h */,
 				774D62771B6917A000762FF4 /* SEVNovoDetalhesTableViewController.m */,
+				794114B41BC2F7C10098CD84 /* SEVAdicionarServicoViewController.h */,
+				794114B51BC2F7C10098CD84 /* SEVAdicionarServicoViewController.m */,
 			);
 			name = "New Service";
 			sourceTree = "<group>";

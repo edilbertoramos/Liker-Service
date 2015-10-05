@@ -27,9 +27,14 @@
 }
 
 
-- (IBAction)photo:(id)sender {
+- (IBAction)photo:(id)sender
+{
+    
 }
 
-- (IBAction)salvar:(id)sender {
+- (IBAction)salvar:(id)sender
+{
+    
 }
+
 @end
